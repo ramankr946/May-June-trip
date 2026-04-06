@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portugal & Spain · Family Trip 2026</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f3ef;color:#1a1a1a;}
+
+.hero{height:460px;position:relative;overflow:hidden;}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:center 60%;}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.68) 100%);}
+.hero-text{position:absolute;bottom:0;left:0;right:0;padding:2.5rem 2rem;color:#fff;}
+.hero-badge{display:inline-block;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.38);color:#fff;border-radius:20px;padding:4px 14px;font-size:0.72rem;margin-bottom:0.7rem;letter-spacing:1.2px;text-transform:uppercase;}
+.hero-text h1{font-size:3rem;font-weight:700;line-height:1.08;text-shadow:0 2px 12px rgba(0,0,0,0.5);}
+.hero-text p{font-size:1rem;opacity:0.82;margin-top:0.45rem;}
+
+nav{display:flex;background:#1a2e4a;overflow-x:auto;scrollbar-width:none;position:sticky;top:0;z-index:100;}
+nav::-webkit-scrollbar{display:none;}
+nav a{color:rgba(255,255,255,0.62);text-decoration:none;padding:13px 17px;font-size:0.8rem;white-space:nowrap;border-bottom:2.5px solid transparent;transition:all 0.2s;cursor:pointer;}
+nav a:hover,nav a.active{color:#fff;border-bottom-color:#f0b429;}
+
+.wrap{max-width:920px;margin:0 auto;padding:0 1.25rem;}
+
+.strip{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;padding:1.3rem 0;}
+.sc{background:#fff;border-radius:10px;padding:0.85rem 0.4rem;text-align:center;border:1px solid #e5e2db;}
+.sc span{font-size:1.5rem;display:block;margin-bottom:0.2rem;}
+.sc-city{font-size:0.76rem;font-weight:600;color:#1a2e4a;}
+.sc-dates{font-size:0.67rem;color:#999;margin-top:2px;}
+.sc-n{font-size:0.7rem;color:#e6a817;font-weight:600;margin-top:3px;}
+
+.box{border-radius:0 8px 8px 0;padding:0.9rem 1.1rem;margin:1rem 0;}
+.box.green{background:#e8f5e9;border-left:4px solid #43a047;}
+.box.green strong{color:#1b5e20;display:block;font-size:0.82rem;margin-bottom:0.2rem;}
+.box.green p{font-size:0.82rem;color:#2e5c30;line-height:1.6;}
+.box.amber{background:#fff8e1;border-left:4px solid #f9a825;}
+.box.amber strong{color:#7a5c00;display:block;font-size:0.82rem;margin-bottom:0.2rem;}
+.box.amber p{font-size:0.82rem;color:#5c4400;line-height:1.6;}
+.box.red{background:#fdecea;border-left:4px solid #e53935;}
+.box.red strong{color:#b71c1c;display:block;font-size:0.82rem;margin-bottom:0.2rem;}
+.box.red p{font-size:0.82rem;color:#7f1515;line-height:1.6;}
+.box.blue{background:#e8f0fe;border-left:4px solid #1a5276;}
+.box.blue strong{color:#1a3a6b;display:block;font-size:0.82rem;margin-bottom:0.2rem;}
+.box.blue p{font-size:0.82rem;color:#2c4a7a;line-height:1.6;}
+
+.tr-table{background:#fff;border-radius:12px;padding:1.25rem;margin:1.25rem 0;border:1px solid #e5e2db;}
+.tr-table h3{font-size:0.95rem;font-weight:600;color:#1a2e4a;margin-bottom:0.9rem;}
+.tr{display:grid;grid-template-columns:170px 88px 1fr;gap:8px;align-items:start;padding:0.6rem 0;border-bottom:1px solid #f0ede8;font-size:0.81rem;}
+.tr:last-child{border-bottom:none;}
+.tr-a{font-weight:600;color:#1a2e4a;}
+.tr-d{color:#999;}
+.tr-h{color:#444;line-height:1.5;}
+
+.sec{margin:2rem 0;}
+.ch{display:flex;align-items:center;gap:1rem;padding:1.4rem 1.5rem;border-radius:12px 12px 0 0;color:#fff;}
+.ch-flag{font-size:2rem;}
+.ch h2{font-size:1.75rem;font-weight:700;}
+.ch-meta{font-size:0.8rem;opacity:0.75;margin-top:2px;}
+.cb{background:#fff;border:1px solid #e5e2db;border-top:none;border-radius:0 0 12px 12px;}
+
+.photo-hero{height:240px;overflow:hidden;}
+.photo-hero img{width:100%;height:100%;object-fit:cover;}
+
+.photo-grid{display:grid;grid-template-columns:1.5fr 1fr;height:200px;overflow:hidden;}
+.photo-grid img{width:100%;height:100%;object-fit:cover;}
+.photo-grid img:first-child{border-right:3px solid #fff;}
+
+.cc{padding:1.3rem;}
+.cd{font-size:0.88rem;color:#444;line-height:1.75;margin-bottom:1.1rem;}
+
+/* Area stay card */
+.area-card{background:#1a2e4a;border-radius:10px;padding:1.1rem 1.25rem;color:#fff;margin:0.85rem 0;}
+.area-card .ac-label{font-size:0.68rem;color:#f0b429;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;margin-bottom:0.4rem;}
+.area-card h3{font-size:1rem;font-weight:700;margin-bottom:0.2rem;}
+.area-card .ac-why{font-size:0.8rem;opacity:0.7;margin-bottom:0.7rem;line-height:1.5;}
+.area-picks{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.6rem;}
+.ap{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:0.75rem;padding:3px 10px;border-radius:12px;}
+.ap.top{background:rgba(240,180,41,0.2);border-color:rgba(240,180,41,0.4);color:#f0b429;}
+.area-note{font-size:0.77rem;opacity:0.6;font-style:italic;padding-top:0.6rem;border-top:1px solid rgba(255,255,255,0.1);}
+
+/* Transport box */
+.tbox{background:#e8f0fe;border-radius:8px;padding:0.9rem 1.1rem;margin:0.85rem 0;border:1px solid #c5d5f8;}
+.tbox h4{font-size:0.82rem;font-weight:600;color:#1a3a6b;margin-bottom:0.4rem;}
+.tbox p{font-size:0.8rem;color:#2c4a7a;line-height:1.6;}
+.topts{display:flex;gap:6px;flex-wrap:wrap;margin-top:0.5rem;}
+.topt{background:#1a3a6b;color:#fff;font-size:0.72rem;padding:3px 10px;border-radius:12px;}
+
+/* Days */
+.days{display:flex;flex-direction:column;gap:1px;background:#eee;border-radius:8px;overflow:hidden;margin:0.85rem 0;}
+.day{background:#fff;display:grid;grid-template-columns:82px 1fr;}
+.dl{background:#fafaf8;padding:0.8rem;border-right:1px solid #eee;}
+.dl-n{font-size:0.66rem;color:#e6a817;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;}
+.dl-d{font-size:0.76rem;font-weight:600;color:#1a2e4a;margin-top:2px;}
+.dl-w{font-size:0.66rem;color:#bbb;}
+.db{padding:0.8rem 1rem;}
+.db-t{font-size:0.85rem;font-weight:600;color:#1a2e4a;margin-bottom:0.4rem;}
+.db ul{list-style:none;}
+.db ul li{font-size:0.81rem;color:#555;line-height:1.6;padding:1px 0 1px 14px;position:relative;}
+.db ul li::before{content:'·';position:absolute;left:3px;color:#e6a817;font-weight:700;}
+.db ul li.s::before{content:'★';font-size:9px;top:3px;color:#e6a817;}
+.db ul li.t{color:#1a5276;}
+.db ul li.t::before{content:'→';color:#1a5276;}
+.db ul li.i{color:#888;font-style:italic;}
+.db ul li.i::before{content:'';left:0;}
+
+/* Places grid */
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0.85rem 0;}
+.pc{border-radius:8px;overflow:hidden;border:1px solid #e5e2db;background:#fff;}
+.pc img{width:100%;height:120px;object-fit:cover;}
+.pc-info{padding:0.65rem;}
+.pc-name{font-size:0.84rem;font-weight:600;color:#1a2e4a;}
+.pc-desc{font-size:0.75rem;color:#666;margin-top:2px;line-height:1.45;}
+.tag{display:inline-block;font-size:0.67rem;padding:2px 8px;border-radius:10px;margin-top:4px;font-weight:500;}
+.tag-b{background:#e0f2fe;color:#01579b;}
+.tag-g{background:#e8f5e9;color:#1b5e20;}
+.tag-a{background:#f3e5f5;color:#6a1b9a;}
+.tag-r{background:#fdecea;color:#b71c1c;}
+.tag-n{background:#e8f0ff;color:#1a3a8a;}
+.tag-f{background:#fce4ec;color:#880e4f;}
+
+/* Checklist */
+.cl{background:#fff;border-radius:12px;padding:1.25rem;margin:1.5rem 0;border:1px solid #e5e2db;}
+.cl h3{font-size:0.95rem;font-weight:600;color:#1a2e4a;margin-bottom:0.9rem;}
+.ci{display:flex;align-items:flex-start;gap:10px;padding:7px 0;border-bottom:1px solid #f5f3ef;}
+.ci:last-child{border-bottom:none;}
+.ck{width:18px;height:18px;border:2px solid #d0cdc7;border-radius:4px;flex-shrink:0;margin-top:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.15s;font-size:10px;color:transparent;}
+.ck.urg{border-color:#e53935;background:#fdecea;}
+.ck.done{background:#43a047;border-color:#43a047;color:#fff;}
+.ct{line-height:1.5;color:#444;flex:1;font-size:0.82rem;}
+.ct a{color:#1a5276;}
+.ul{color:#c62828;font-weight:600;font-size:0.75rem;}
+
+.footer{background:#1a2e4a;color:rgba(255,255,255,0.5);text-align:center;padding:2rem;font-size:0.78rem;margin-top:2.5rem;}
+.footer strong{color:#f0b429;}
+
+@media(max-width:620px){
+  .strip{grid-template-columns:repeat(3,1fr);}
+  .pgrid{grid-template-columns:1fr;}
+  .photo-grid{grid-template-columns:1fr;height:auto;}
+  .photo-grid img:first-child{border-right:none;border-bottom:3px solid #fff;}
+  .tr{grid-template-columns:1fr;gap:2px;}
+  .hero-text h1{font-size:2rem;}
+  .day{grid-template-columns:70px 1fr;}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img src="https://source.unsplash.com/1400x460/?portugal,coast,sea" alt="Portugal coastline">
+  <div class="hero-overlay"></div>
+  <div class="hero-text">
+    <div class="hero-badge">Family Trip · May – June 2026</div>
+    <h1>Portugal &amp; Spain</h1>
+    <p>Raman · Sulochana · Zain &nbsp;·&nbsp; 27 May – 12 June 2026 · 17 days · 5 cities</p>
+  </div>
+</div>
+
+<nav>
+  <a class="active" onclick="goTo('overview')">Overview</a>
+  <a onclick="goTo('cascais')">🇵🇹 Cascais</a>
+  <a onclick="goTo('seville')">🇪🇸 Seville</a>
+  <a onclick="goTo('malaga')">🇪🇸 Málaga</a>
+  <a onclick="goTo('granada')">🇪🇸 Granada</a>
+  <a onclick="goTo('madrid')">🇪🇸 Madrid</a>
+  <a onclick="goTo('checklist')">Checklist</a>
+</nav>
+
+<div class="wrap" id="overview">
+  <div class="strip">
+    <div class="sc"><span>🇵🇹</span><div class="sc-city">Cascais</div><div class="sc-dates">27 May–31 May</div><div class="sc-n">4 nights</div></div>
+    <div class="sc"><span>🇪🇸</span><div class="sc-city">Seville</div><div class="sc-dates">31 May–3 Jun</div><div class="sc-n">3 nights</div></div>
+    <div class="sc"><span>🇪🇸</span><div class="sc-city">Málaga</div><div class="sc-dates">3 Jun–5 Jun</div><div class="sc-n">2 nights</div></div>
+    <div class="sc"><span>🇪🇸</span><div class="sc-city">Granada</div><div class="sc-dates">5 Jun–8 Jun</div><div class="sc-n">3 nights</div></div>
+    <div class="sc"><span>🇪🇸</span><div class="sc-city">Madrid</div><div class="sc-dates">8 Jun–11 Jun</div><div class="sc-n">3 nights</div></div>
+  </div>
+
+  <div class="box green">
+    <strong>✅ Visa — Entering Lisbon on your Spanish Schengen visa is fully valid</strong>
+    <p>A Schengen visa issued by Spain covers entry through all 27 member states including Portugal. No separate visa needed. Carry your AIMA biometrics appointment letter at the border.</p>
+  </div>
+
+  <div class="tr-table">
+    <h3>All Transfers</h3>
+    <div class="tr"><div class="tr-a">Dubai → Lisbon</div><div class="tr-d">27 May eve</div><div class="tr-h">Flight ~7.5h · Land late · Pre-booked transfer to Cascais hotel (~45 min, ~€65)</div></div>
+    <div class="tr"><div class="tr-a">Cascais → Lisbon</div><div class="tr-d">28 May</div><div class="tr-h">Coastal train · Cascais → Cais do Sodré · 40 min · every 20 min · ~€2.50</div></div>
+    <div class="tr"><div class="tr-a">Cascais → Seville</div><div class="tr-d">31 May</div><div class="tr-h">Drive A2/E90 via Badajoz · ~3.5h · rental car picked up after biometrics on 29th</div></div>
+    <div class="tr"><div class="tr-a">Seville → Málaga</div><div class="tr-d">3 Jun</div><div class="tr-h">Drive A-92 / AP-46 · ~2h · flat Andalusian motorway</div></div>
+    <div class="tr"><div class="tr-a">Málaga → Granada</div><div class="tr-d">5 Jun</div><div class="tr-h">Drive A-92 · ~1.5h · shortest transfer of the trip · drop car in Granada</div></div>
+    <div class="tr"><div class="tr-a">Granada → Madrid</div><div class="tr-d">8 Jun</div><div class="tr-h">RENFE AVE from Granada-Santa Fe · ~3h · book upper deck seats together</div></div>
+    <div class="tr"><div class="tr-a">Madrid → Dubai</div><div class="tr-d">12 Jun</div><div class="tr-h">Barajas T4 · allow 45 min from city · arrive 3h before international departure</div></div>
+  </div>
+</div>
+
+<!-- ═══ CASCAIS ═══ -->
+<div class="wrap" id="cascais">
+<div class="sec">
+  <div class="ch" style="background:#1a2e4a;">
+    <span class="ch-flag">🇵🇹</span>
+    <div><h2>Cascais</h2><div class="ch-meta">27 May – 31 May · 4 nights · Your Portugal base</div></div>
+  </div>
+  <div class="cb">
+    <div class="photo-hero">
+      <img src="https://source.unsplash.com/1200x400/?cascais,bay,portugal" alt="Cascais bay Portugal">
+    </div>
+    <div class="cc">
+      <p class="cd">A beautiful seaside resort town 30km west of Lisbon — upmarket fishing village with a gorgeous bay, excellent seafood, and exactly the right pace for landing jet-lagged with a toddler. Your AIMA biometrics office is here, so zero commute on the appointment morning. Lisbon is 40 minutes by coastal train for day trips.</p>
+
+      <div class="area-card">
+        <div class="ac-label">Where to stay</div>
+        <h3>Cascais seafront / town centre area</h3>
+        <div class="ac-why">Stay within 10 min walk of Cascais train station and the bay. The town centre is compact, flat, and walkable — ideal with a toddler. Avoid Estoril (too quiet) and the A5 corridor hotels (too far from the sea).</div>
+        <div class="area-picks">
+          <span class="ap top">Sheraton Cascais Resort — Marriott Bonvoy Cat 6 · seafront · pool</span>
+          <span class="ap">Bairro Art House — boutique, central</span>
+          <span class="ap">Grande Real Villa Itália — seafront palace hotel</span>
+        </div>
+        <div class="area-note">All options are within easy walking distance of the AIMA office and Cascais beach. Book seafront or sea-view rooms where possible.</div>
+      </div>
+
+      <div class="tbox">
+        <h4>Transport arranged — Biometrics Day (29 May)</h4>
+        <p>Private car from hotel to AIMA Cascais office, departing 9:30am for 10:00am appointment. Return transfer arranged for ~11am. Fallback options if needed:</p>
+        <div class="topts">
+          <span class="topt">Private car — arrange via hotel concierge</span>
+          <span class="topt">Bolt / Uber ~€8</span>
+          <span class="topt">10 min walk</span>
+        </div>
+      </div>
+
+      <div class="days">
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 1</div><div class="dl-d">27 May</div><div class="dl-w">Tue</div></div>
+          <div class="db"><div class="db-t">Arrival — Land &amp; Sleep</div><ul>
+            <li class="t">Flight lands Lisbon late · pre-booked transfer to Cascais hotel · ~45 min · ~€65</li>
+            <li>Check in · eat at hotel · put Zain down · sleep</li>
+            <li class="i">No plans tonight. The trip starts tomorrow.</li>
+          </ul></div>
+        </div>
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 2</div><div class="dl-d">28 May</div><div class="dl-w">Wed</div></div>
+          <div class="db"><div class="db-t">Lisbon Day Trip — Business Visits</div><ul>
+            <li class="t">Cascais station → Lisbon Cais do Sodré · 40 min · leave by 8:30am</li>
+            <li class="s">Henley Global office visit — confirm address and time in advance</li>
+            <li class="s">Developer office visit — schedule back to back with Henley</li>
+            <li>Lunch at Time Out Market — right at Cais do Sodré, open food hall, no fuss</li>
+            <li>Afternoon: Chiado browse or Praça do Comércio riverfront if meetings finish early</li>
+            <li class="t">Train back to Cascais by 6–7pm · dinner in town</li>
+            <li class="i">Sulochana and Zain at hotel — pool and Cascais beach all day</li>
+          </ul></div>
+        </div>
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 3</div><div class="dl-d">29 May</div><div class="dl-w">Thu</div></div>
+          <div class="db"><div class="db-t">★ Biometrics 10:00am + Cascais afternoon</div><ul>
+            <li class="s">AIMA biometrics 10:00am · transport arranged · bring originals + photocopies of all documents</li>
+            <li>Done by ~11am · walk into Cascais town</li>
+            <li>Pick up rental car after appointment · park at hotel until 31 May</li>
+            <li>Lunch at a seafood restaurant on the bay · grilled sea bream, local wine, no agenda</li>
+            <li class="s">Cascais beach afternoon — Zain in the sand, adults decompress properly</li>
+            <li>Evening: marina promenade walk · dinner at a waterfront restaurant</li>
+          </ul></div>
+        </div>
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 4</div><div class="dl-d">30 May</div><div class="dl-w">Fri</div></div>
+          <div class="db"><div class="db-t">Sintra Day Trip by Car</div><ul>
+            <li class="t">Drive Cascais → Sintra · 20 min · leave by 9am before crowds</li>
+            <li class="s">Pena Palace — book at parquesdesintra.pt · vast grounds, peacocks, ramparts, lawns · Zain's highlight of Portugal · 2–2.5h</li>
+            <li>Sintra village lunch — travesseiros at Piriquita bakery (almond cream pastry, est. 1862)</li>
+            <li class="s">Cabo da Roca on the return — westernmost point of continental Europe · 15 min detour · dramatic Atlantic cliffs</li>
+            <li>Back to Cascais by 4pm · pool · pack for Seville tomorrow</li>
+          </ul></div>
+        </div>
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 5</div><div class="dl-d">31 May</div><div class="dl-w">Sat</div></div>
+          <div class="db"><div class="db-t">Drive Cascais → Seville</div><ul>
+            <li class="t">Leave 9am · A2 south → Badajoz border → A66 south · ~3.5h total</li>
+            <li>One 20-min stop at a service area around the 2h mark for Zain</li>
+            <li>Arrive Seville ~12:30pm · check in · hotel pool afternoon</li>
+            <li class="s">Plaza de España at golden hour (7:30–9pm) — rowboats on canal, Zain runs the full circuit</li>
+            <li>Dinner in Barrio Santa Cruz — El Rinconcillo (est. 1670) for authentic tapas</li>
+          </ul></div>
+        </div>
+      </div>
+
+      <div class="pgrid">
+        <div class="pc">
+          <img src="https://source.unsplash.com/600x350/?sintra,pena,palace" alt="Pena Palace Sintra">
+          <div class="pc-info"><div class="pc-name">Pena Palace, Sintra</div><div class="pc-desc">Fairy-tale hilltop palace with vast grounds, peacocks, and ramparts. 20 min drive — Zain's highlight.</div><span class="tag tag-g">20 min drive · Book ahead</span></div>
+        </div>
+        <div class="pc">
+          <img src="https://source.unsplash.com/600x350/?cascais,beach,blue" alt="Cascais beach Portugal">
+          <div class="pc-info"><div class="pc-name">Cascais Bay &amp; Beach</div><div class="pc-desc">Praia de Cascais — calm, clean, right at the hotel. Zain's daily playground while you settle in.</div><span class="tag tag-b">5 min walk</span></div>
+        </div>
+        <div class="pc">
+          <img src="https://source.unsplash.com/600x350/?atlantic,cliffs,portugal" alt="Cabo da Roca Portugal">
+          <div class="pc-info"><div class="pc-name">Cabo da Roca</div><div class="pc-desc">Westernmost point of continental Europe. Dramatic clifftop above the Atlantic. 15 min detour from Sintra.</div><span class="tag tag-g">15 min detour</span></div>
+        </div>
+        <div class="pc">
+          <img src="https://source.unsplash.com/600x350/?lisbon,tram,city" alt="Lisbon Portugal">
+          <div class="pc-info"><div class="pc-name">Lisbon Day Trip</div><div class="pc-desc">Chiado, Time Out Market, Praça do Comércio riverfront. 40 min by coastal train from Cascais.</div><span class="tag tag-n">40 min train</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ═══ SEVILLE ═══ -->
+<div class="wrap" id="seville">
+<div class="sec">
+  <div class="ch" style="background:#5c2d8a;">
+    <span class="ch-flag">🇪🇸</span>
+    <div><h2>Seville</h2><div class="ch-meta">31 May – 3 June · 3 nights · Andalusia's jewel</div></div>
+  </div>
+  <div class="cb">
+    <div class="photo-grid">
+      <img src="https://source.unsplash.com/1200x400/?seville,spain,alcazar" alt="Seville Alcazar gardens">
+      <img src="https://source.unsplash.com/600x350/?seville,cathedral,spain" alt="Seville Cathedral Giralda">
+    </div>
+    <div class="cc">
+      <p class="cd">Grand Islamic palaces, orange-tree lined lanes, flamenco drifting from behind closed doors, and food that makes you want to stay another week. June heat enforces the perfect wind-down rhythm: out early, hard siesta, beautiful evenings.</p>
+
+      <div class="area-card">
+        <div class="ac-label">Where to stay</div>
+        <h3>Barrio Santa Cruz / Cathedral area</h3>
+        <div class="ac-why">Stay in or immediately adjacent to the old town. Walking distance to Alcázar, Cathedral, and Santa Cruz means you're not battling taxis with a toddler in 35°C heat. The best hotels in Seville are concentrated here.</div>
+        <div class="area-picks">
+          <span class="ap top">Hotel Alfonso XIII (Luxury Collection) — Marriott Cat 8 · royal palace hotel · 5 min from Alcázar</span>
+          <span class="ap">EME Catedral Hotel — rooftop with Giralda views</span>
+          <span class="ap">Marriott Seville — Cat 5 · riverside · pool</span>
+          <span class="ap">AC Hotel Ciudad de Sevilla — Cat 4 · modern · good value</span>
+        </div>
+        <div class="area-note">Avoid hotels across the river in Triana unless you specifically want that neighbourhood — adds unnecessary transfers with a toddler.</div>
+      </div>
+
+      <div class="days">
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 5</div><div class="dl-d">31 May</div><div class="dl-w">Sat</div></div>
+          <div class="db"><div class="db-t">Arrive + Plaza de España Evening</div><ul>
+            <li>Check in · lunch near hotel · pool afternoon</li>
+            <li class="s">Plaza de España at golden hour — tiled alcoves, canal, rowboats · Zain runs the full circuit · free entry</li>
+            <li>Dinner in Barrio Santa Cruz — El Rinconcillo (est. 1670) for authentic tapas</li>
+          </ul></div>
+        </div>
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 6</div><div class="dl-d">1 Jun</div><div class="dl-w">Sun</div></div>
+          <div class="db"><div class="db-t">★ Real Alcázar + María Luisa Park</div><ul>
+            <li class="s">Real Alcázar — book at alcazarsevilla.org · first slot 9:30am · peacocks, fountains, royal gardens · 2.5–3h</li>
+            <li class="s">Parque de María Luisa — duck ponds, open lawns, shaded paths, directly adjacent to Alcázar</li>
+            <li>Late lunch near the park · hard siesta 2–5:30pm — enforce this, Seville in June is 35°C</li>
+            <li>Rooftop bar at EME Catedral Hotel — Giralda tower lit gold at sunset · drinks only</li>
+          </ul></div>
+        </div>
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 7</div><div class="dl-d">2 Jun</div><div class="dl-w">Mon</div></div>
+          <div class="db"><div class="db-t">Cathedral + Triana + Flamenco</div><ul>
+            <li class="s">Seville Cathedral &amp; Giralda Tower — world's largest Gothic cathedral · book at catedraldesevilla.es · ramp climb, no stairs, Zain can walk it</li>
+            <li class="s">Barrio de Triana — flamenco and ceramics quarter · Mercado de Triana for lunch inside the 19th-century iron market</li>
+            <li>Hard siesta 2–5pm</li>
+            <li class="s">Flamenco show — Casa de la Memoria (intimate, authentic, 1 hour) · book 1 week ahead · Zain will be transfixed</li>
+          </ul></div>
+        </div>
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 8</div><div class="dl-d">3 Jun</div><div class="dl-w">Tue</div></div>
+          <div class="db"><div class="db-t">Morning Seville + Drive to Málaga</div><ul>
+            <li>Final Santa Cruz walk in morning light · check out by 10am</li>
+            <li class="t">Drive A-92 / AP-46 → Málaga · ~2h · flat and easy</li>
+            <li>Optional stop: Antequera (~halfway) — hilltop town, 30-min break for Zain</li>
+            <li>Arrive Málaga early afternoon · beach immediately</li>
+          </ul></div>
+        </div>
+      </div>
+
+      <div class="pgrid">
+        <div class="pc">
+          <img src="https://source.unsplash.com/600x350/?alcazar,seville,garden" alt="Real Alcazar Seville">
+          <div class="pc-info"><div class="pc-name">Real Alcázar</div><div class="pc-desc">Mudéjar palace with extraordinary gardens — peacocks, fountains, shaded hedgerows. Book timed entry online.</div><span class="tag tag-n">Book ahead · 9:30am slot</span></div>
+        </div>
+        <div class="pc">
+          <img src="https://source.unsplash.com/600x350/?plaza,espana,fountain" alt="Plaza de Espana Seville">
+          <div class="pc-info"><div class="pc-name">Plaza de España</div><div class="pc-desc">One of Europe's most dramatic public spaces — tiled alcoves, a canal, rowboats. Best at golden hour. Free.</div><span class="tag tag-g">Free · Golden hour</span></div>
+        </div>
+        <div class="pc">
+          <img src="https://source.unsplash.com/600x350/?flamenco,dancer,dress" alt="Flamenco dance Spain">
+          <div class="pc-info"><div class="pc-name">Flamenco Show</div><div class="pc-desc">Casa de la Memoria — intimate, authentic, 1 hour. Even Zain will be transfixed for the first 20 minutes.</div><span class="tag tag-a">Book 1 week ahead</span></div>
+        </div>
+        <div class="pc">
+          <img src="https://source.unsplash.com/600x350/?seville,street,spain" alt="Seville tapas bar">
+          <div class="pc-info"><div class="pc-name">Barrio Santa Cruz</div><div class="pc-desc">Seville's old Jewish quarter — narrow candlelit lanes, outdoor terraces, the best tapas bars in the city.</div><span class="tag tag-f">Tapas · Evenings</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ═══ MÁLAGA ═══ -->
+<div class="wrap" id="malaga">
+<div class="sec">
+  <div class="ch" style="background:#0e6655;">
+    <span class="ch-flag">🇪🇸</span>
+    <div><h2>Málaga</h2><div class="ch-meta">3 – 5 June · 2 nights · Beach &amp; culture</div></div>
+  </div>
+  <div class="cb">
+    <div class="photo-grid">
+      <img src="https://source.unsplash.com/1200x400/?malaga,coast,beach" alt="Malaga coastline beach">
+      <img src="https://source.unsplash.com/600x350/?malaga,old,town" alt="Malaga old town Alcazaba">
+    </div>
+    <div class="cc">
+      <p class="cd">The most underrated city on this route. Beautiful old town, the world's finest Picasso collection, vibrant food scene, and a clean central beach 10 minutes from everything. More relaxed and less touristy than Seville. Zain gets his proper beach days here.</p>
+
+      <div class="area-card">
+        <div class="ac-label">Where to stay</div>
+        <h3>Port / Cathedral area (Centro Histórico)</h3>
+        <div class="ac-why">Stay on or near the port (Muelle Uno) or within the historic centre. Walking distance to La Malagueta beach, Picasso Museum, and the Alcazaba. Avoid the seafront strip east of the beach — it's resort territory, not the real city.</div>
+        <div class="area-picks">
+          <span class="ap top">AC Hotel Málaga Palacio — Marriott Cat 5 · rooftop pool · port views · 5 min to Picasso Museum</span>
+          <span class="ap">Marriott Málaga — Cat 5 · newer, good pool</span>
+          <span class="ap">Parador de Málaga Gibralfaro — stunning hilltop castle hotel</span>
+        </div>
+        <div class="area-note">The rooftop pool at AC Palacio with port views is particularly good for early evenings with Zain before dinner.</div>
+      </div>
+
+      <div class="days">
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 8</div><div class="dl-d">3 Jun</div><div class="dl-w">Tue</div></div>
+          <div class="db"><div class="db-t">Arrive + La Malagueta Beach</div><ul>
+            <li>Check in · swimwear on · 15 min walk to La Malagueta beach</li>
+            <li class="s">La Malagueta — calm Mediterranean water, sunbeds, Zain in the waves · plan 3 hours minimum</li>
+            <li class="s">Espetos de sardinas — sardines grilled on bamboo over open fire at the beach chiringuito · the Málaga dish · order immediately</li>
+            <li>Evening: Muelle Uno port promenade walk · dinner on Calle Larios</li>
+          </ul></div>
+        </div>
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 9</div><div class="dl-d">4 Jun</div><div class="dl-w">Wed</div></div>
+          <div class="db"><div class="db-t">Picasso Museum + Alcazaba + Old Town</div><ul>
+            <li class="s">Museo Picasso Málaga — book at museopicassomalaga.org · world-class collection in a 16th-century palace · 1.5–2h</li>
+            <li class="s">Alcazaba fortress — Moorish citadel above the city with beautiful gardens and views · 1h</li>
+            <li>Atarazanas Market — 14th-century Moorish gateway into the covered market, great for a morning snack</li>
+            <li>Lunch at El Pimpi — Málaga's most famous taverna, wine barrels signed by celebrities, great atmosphere</li>
+            <li>Siesta · rooftop pool · pack for Granada</li>
+            <li>Dinner: fritura malagueña (mixed fried seafood platter) — the signature dish of Málaga</li>
+          </ul></div>
+        </div>
+      </div>
+
+      <div class="pgrid">
+        <div class="pc">
+          <img src="https://source.unsplash.com/600x350/?malaga,beach,mediterranean" alt="La Malagueta beach Malaga">
+          <div class="pc-info"><div class="pc-name">La Malagueta Beach</div><div class="pc-desc">Clean, calm Mediterranean. Zain's beach day. Espetos on the beach. 15 min walk from city centre.</div><span class="tag tag-b">15 min walk · Free</span></div>
+        </div>
+        <div class="pc">
+          <img src="https://source.unsplash.com/600x350/?museum,art,painting" alt="Picasso Museum Malaga">
+          <div class="pc-info"><div class="pc-name">Museo Picasso Málaga</div><div class="pc-desc">Picasso was born in Málaga. One of the world's great collections in a stunning 16th-century palace.</div><span class="tag tag-a">Book 3–5 days ahead</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ═══ GRANADA ═══ -->
+<div class="wrap" id="granada">
+<div class="sec">
+  <div class="ch" style="background:#1e6b3a;">
+    <span class="ch-flag">🇪🇸</span>
+    <div><h2>Granada</h2><div class="ch-meta">5 – 8 June · 3 nights · The centrepiece</div></div>
+  </div>
+  <div class="cb">
+    <div class="photo-grid">
+      <img src="https://source.unsplash.com/600x350/?malaga,old,town" alt="Alhambra Granada sunset">
+      <img src="https://source.unsplash.com/600x350/?granada,alhambra,view" alt="Granada Albaicin white houses">
+    </div>
+    <div class="cc">
+      <p class="cd">The emotional peak of the trip. At 738m altitude it's cooler than Seville and Málaga — a genuine relief. The Alhambra is in a category of its own. The Albaicín is the most atmospheric urban neighbourhood in Andalusia. Free tapas with every drink at every bar.</p>
+
+      <div class="box red">
+        <strong>🚨 Book Alhambra tickets NOW — alhambra-patronato.es</strong>
+        <p>General admission with Nasrid Palaces sells out 4–6 weeks in advance in June. Get the 9:30am slot on 6 Jun. The Nasrid Palaces are the critical ticket. Do this today — everything else can wait.</p>
+      </div>
+
+      <div class="area-card">
+        <div class="ac-label">Where to stay</div>
+        <h3>Plaza Nueva / Cathedral area</h3>
+        <div class="ac-why">Stay in the historic centre within walking distance of Plaza Nueva — the gateway to both the Alhambra hill and the Albaicín. Avoid the Albaicín itself for accommodation with a toddler — the lanes are steep and impractical with luggage.</div>
+        <div class="area-picks">
+          <span class="ap top">Palacio de Santa Paula (Autograph Collection) — Marriott Cat 6 · 16th-century convent · stunning courtyard · central</span>
+          <span class="ap">AC Hotel Granada — Marriott Cat 4 · modern · reliable</span>
+          <span class="ap">Hotel Alhambra Palace — historic hilltop hotel, dramatic views</span>
+          <span class="ap">Parador de Granada — inside the Alhambra grounds (book months ahead)</span>
+        </div>
+        <div class="area-note">The Parador de Granada is the most special hotel on the entire trip if available — it sits inside the Alhambra gardens themselves. Worth checking availability even if it seems far-fetched.</div>
+      </div>
+
+      <div class="days">
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 10</div><div class="dl-d">5 Jun</div><div class="dl-w">Thu</div></div>
+          <div class="db"><div class="db-t">Drive Málaga → Granada + Evening Arrival</div><ul>
+            <li class="t">Drive A-92 · ~1.5h · easiest transfer of the trip · drop car at hire company in Granada</li>
+            <li>Check in · afternoon rest</li>
+            <li class="s">Carrera del Darro evening walk — river street below the Alhambra hill · one of the finest evening walks in Spain</li>
+            <li class="s">Sunset at Mirador de San Nicolás — the iconic view across to the Alhambra · arrive by 8pm for a spot</li>
+            <li>Dinner: Ruta del Azafrán or Arrayanes in the Albaicín</li>
+          </ul></div>
+        </div>
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 11</div><div class="dl-d">6 Jun</div><div class="dl-w">Fri</div></div>
+          <div class="db"><div class="db-t">★ The Alhambra — Full Morning</div><ul>
+            <li>Arrive at gates 20 min before timed slot · security queues in June</li>
+            <li class="s">Generalife Gardens — terraced water gardens, long fountain channels, rose beds, cypress alleys · 1h · Zain absorbed by the fountains</li>
+            <li class="s">Nasrid Palaces — Court of Lions, Comares Palace, intricate stucco and tilework · pinnacle of Islamic architecture · 1.5h</li>
+            <li class="s">Alcazaba towers — views over Granada and Sierra Nevada · Zain climbs the battlements</li>
+            <li>Exit by 1pm · lunch · hard siesta 2–5pm</li>
+            <li>Evening: free tapas bar-hop around Plaza Nueva · order a drink, receive a tapa · €15 feeds both adults well</li>
+          </ul></div>
+        </div>
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 12</div><div class="dl-d">7 Jun</div><div class="dl-w">Sat</div></div>
+          <div class="db"><div class="db-t">Albaicín + Cathedral + Slow Day</div><ul>
+            <li class="s">Albaicín morning walk — Calle Calderería Nueva · Moorish teahouses, craft shops, whitewashed carmenes, cats everywhere</li>
+            <li class="s">Granada Cathedral &amp; Royal Chapel — Ferdinand and Isabella buried here · magnificent Renaissance interior · 1h</li>
+            <li class="s">Free tapas lunch — Bar Los Diamantes, La Cueva de 1900 · sit, drink, eat what arrives · do 2–3 different bars</li>
+            <li>Long afternoon siesta — nobody goes anywhere</li>
+            <li>Sacromonte neighbourhood evening — gypsy cave quarter carved into the hillside above the Albaicín</li>
+            <li>Final Granada dinner: Botánico or Ruta del Azafrán — make it a proper meal</li>
+          </ul></div>
+        </div>
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 13</div><div class="dl-d">8 Jun</div><div class="dl-w">Sun</div></div>
+          <div class="db"><div class="db-t">Morning Granada + AVE to Madrid</div><ul>
+            <li>Easy morning · breakfast · final Plaza Nueva walk</li>
+            <li class="t">Taxi to Granada-Santa Fe AVE station · 15 min · ~€20</li>
+            <li class="s">RENFE AVE Granada → Madrid Atocha · ~3h · book upper deck seats for views across La Mancha</li>
+            <li class="t">Arrive Madrid mid-afternoon · metro or taxi to hotel</li>
+          </ul></div>
+        </div>
+      </div>
+
+      <div class="pgrid">
+        <div class="pc">
+          <img src="https://source.unsplash.com/600x350/?alhambra,palace,spain" alt="Alhambra palace Granada">
+          <div class="pc-info"><div class="pc-name">The Alhambra</div><div class="pc-desc">A complete Nasrid city — palaces, gardens, fortifications. Among the finest monuments in the world. Timed entry essential.</div><span class="tag tag-r">Book 4–6 weeks ahead NOW</span></div>
+        </div>
+        <div class="pc">
+          <img src="https://source.unsplash.com/600x350/?granada,albaicin,white" alt="Mirador San Nicolas Granada">
+          <div class="pc-info"><div class="pc-name">Mirador de San Nicolás</div><div class="pc-desc">The iconic viewpoint over the Alhambra at sunset. Arrive by 8pm. One of the great travel moments.</div><span class="tag tag-g">Free · Sunset</span></div>
+        </div>
+        <div class="pc">
+          <img src="https://source.unsplash.com/600x350/?granada,alhambra,view" alt="Albaicin Granada whitewashed">
+          <div class="pc-info"><div class="pc-name">Albaicín Quarter</div><div class="pc-desc">Moorish hillside neighbourhood: whitewashed lanes, teahouses, cats. Free tapas with every drink.</div><span class="tag tag-f">Free tapas with drinks</span></div>
+        </div>
+        <div class="pc">
+          <img src="https://source.unsplash.com/600x350/?tapas,food,spain" alt="Granada tapas food Spain">
+          <div class="pc-info"><div class="pc-name">Free Tapas Culture</div><div class="pc-desc">Order a drink, receive a free tapa — unlike anywhere else in Spain. Bar-hop for lunch at €3/drink, eat very well.</div><span class="tag tag-f">Free with every drink</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ═══ MADRID ═══ -->
+<div class="wrap" id="madrid">
+<div class="sec">
+  <div class="ch" style="background:#7b241c;">
+    <span class="ch-flag">🇪🇸</span>
+    <div><h2>Madrid</h2><div class="ch-meta">8 – 11 June · 3 nights · Final city · Fly 12 Jun</div></div>
+  </div>
+  <div class="cb">
+    <div class="photo-grid">
+      <img src="https://source.unsplash.com/1200x400/?madrid,retiro,park" alt="Retiro Park Madrid lake">
+      <img src="https://source.unsplash.com/600x350/?plaza,espana,fountain" alt="Madrid city centre Gran Via">
+    </div>
+    <div class="cc">
+      <p class="cd">A worthy final city. Three nights gives you Retiro Park for Zain, the Prado for the adults, and Madrid's exceptional food scene for the evenings. The best-fed city of the entire trip. End the journey properly here.</p>
+
+      <div class="area-card">
+        <div class="ac-label">Where to stay</div>
+        <h3>Jerónimos / Retiro / Paseo del Prado area</h3>
+        <div class="ac-why">Stay in the cultural triangle between the Prado, Retiro Park, and Paseo del Prado. You're walking distance to everything on the itinerary and you avoid the noise of the Sol/Gran Vía tourist core. This is the right part of Madrid for a wind-down stay.</div>
+        <div class="area-picks">
+          <span class="ap top">The Westin Palace Madrid — Marriott Cat 7 · grand historic hotel 1912 · 5 min from Prado and Retiro</span>
+          <span class="ap">AC Palacio del Retiro (Autograph Collection) — Cat 6 · boutique · directly beside the park</span>
+          <span class="ap">Hotel Ritz by Belmond — if going non-Marriott, the finest hotel in Madrid</span>
+          <span class="ap">Marriott Madrid Auditorium — Cat 4 · near airport if early 12 Jun flight</span>
+        </div>
+        <div class="area-note">The Westin Palace is the right call for a final-night-of-a-big-trip hotel. The stained glass rotunda lobby is spectacular. Worth using Bonvoy points here.</div>
+      </div>
+
+      <div class="days">
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 13</div><div class="dl-d">8 Jun</div><div class="dl-w">Sun</div></div>
+          <div class="db"><div class="db-t">Arrive Madrid + Evening</div><ul>
+            <li>Check in · rest after AVE · evening Paseo del Prado stroll</li>
+            <li class="s">Dinner: Sobrino de Botín (est. 1725, oldest restaurant in the world) — roast suckling pig · book at botin.es</li>
+          </ul></div>
+        </div>
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 14</div><div class="dl-d">9 Jun</div><div class="dl-w">Mon</div></div>
+          <div class="db"><div class="db-t">★ Retiro Park + Prado Museum</div><ul>
+            <li class="s">Retiro Park — rowboat on the Estanque Grande (Zain will talk about this for months) · Crystal Palace · wide shaded paths · arrive 9:30am</li>
+            <li class="s">Museo del Prado — walk directly from the park · Velázquez (Las Meninas), Goya (Black Paintings), El Greco · 1.5–2h</li>
+            <li>Lunch near the Prado on Calle Moratín · siesta · afternoon rest</li>
+            <li class="s">Tapas in La Latina — Calle Cava Baja · Bar Txirimiri, Casa Lucas, El Almendro 13</li>
+          </ul></div>
+        </div>
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 15</div><div class="dl-d">10 Jun</div><div class="dl-w">Tue</div></div>
+          <div class="db"><div class="db-t">Madrid at Your Own Pace</div><ul>
+            <li>Late breakfast · Mercado de San Miguel (near Plaza Mayor) — oysters, jamón, vermouth · opens 10am</li>
+            <li>Plaza Mayor · Puerta del Sol · Calle Fuencarral through Chueca</li>
+            <li>Retiro Park again if Zain demands the rowboats — he will</li>
+            <li class="s">Final dinner: Cinco Jotas on Calle de Puerta Cerrada — finest jamón ibérico de bellota in Madrid · a bottle of Rioja · take your time</li>
+          </ul></div>
+        </div>
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 16</div><div class="dl-d">11 Jun</div><div class="dl-w">Wed</div></div>
+          <div class="db"><div class="db-t">Last Morning + Early Night</div><ul>
+            <li>Sleep in · late hotel breakfast · Gran Vía walk</li>
+            <li>Back to hotel by 3pm · pack properly · confirm airport transfer</li>
+            <li>Early dinner · early night</li>
+          </ul></div>
+        </div>
+        <div class="day">
+          <div class="dl"><div class="dl-n">Day 17</div><div class="dl-d">12 Jun</div><div class="dl-w">Thu</div></div>
+          <div class="db"><div class="db-t">Fly Madrid → Dubai</div><ul>
+            <li class="t">Transfer to Barajas T4 · allow 45 min from city · arrive 3h before international departure</li>
+            <li>Flight Madrid → Dubai · ~7h · arrive Dubai same day or early 13 Jun</li>
+          </ul></div>
+        </div>
+      </div>
+
+      <div class="pgrid">
+        <div class="pc">
+          <img src="https://source.unsplash.com/1200x400/?madrid,retiro,park" alt="Retiro Park Madrid rowboats lake">
+          <div class="pc-info"><div class="pc-name">Parque del Retiro</div><div class="pc-desc">Rowboats on the lake, Crystal Palace, puppet theatre. Zain's favourite Madrid stop. Arrive 9:30am.</div><span class="tag tag-g">Free entry · Rowboats ~€8</span></div>
+        </div>
+        <div class="pc">
+          <img src="https://source.unsplash.com/600x350/?madrid,prado,museum" alt="Prado Museum Madrid">
+          <div class="pc-info"><div class="pc-name">Museo del Prado</div><div class="pc-desc">World's greatest Spanish painting collection. Go straight to Velázquez and Goya. 1.5–2h is right with a toddler.</div><span class="tag tag-a">Book online</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ═══ CHECKLIST ═══ -->
+<div class="wrap" id="checklist">
+  <div class="cl">
+    <h3>Pre-Trip Booking Checklist</h3>
+    <div class="ci"><div class="ck urg" onclick="tog(this)">✓</div><div class="ct"><span class="ul">URGENT — Do today: </span>Alhambra tickets — <a href="https://www.alhambra-patronato.es" target="_blank">alhambra-patronato.es</a> · Nasrid Palaces + General admission · 9:30am slot on 6 Jun · sells out 4–6 weeks ahead in June</div></div>
+    <div class="ci"><div class="ck" onclick="tog(this)">✓</div><div class="ct">Cascais hotel — seafront / town centre area · check in 27 May · check out 31 May · 4 nights</div></div>
+    <div class="ci"><div class="ck" onclick="tog(this)">✓</div><div class="ct">Seville hotel — Santa Cruz / Cathedral area · 31 May – 3 Jun · 3 nights · Alfonso XIII or Marriott Seville via marriott.com</div></div>
+    <div class="ci"><div class="ck" onclick="tog(this)">✓</div><div class="ct">Málaga hotel — Port / Centro Histórico area · 3–5 Jun · 2 nights · AC Palacio or Marriott Málaga</div></div>
+    <div class="ci"><div class="ck" onclick="tog(this)">✓</div><div class="ct">Granada hotel — Plaza Nueva / Cathedral area · 5–8 Jun · 3 nights · Palacio de Santa Paula (Autograph) or check Parador inside Alhambra</div></div>
+    <div class="ci"><div class="ck" onclick="tog(this)">✓</div><div class="ct">Madrid hotel — Jerónimos / Retiro area · 8–11 Jun · 3 nights · Westin Palace or AC Palacio del Retiro</div></div>
+    <div class="ci"><div class="ck" onclick="tog(this)">✓</div><div class="ct">Car hire — Pick up Cascais/Lisbon airport 29 May after biometrics · Drop off Granada 5 Jun · Request child seat · Book Europcar / Hertz / Avis direct (not aggregators)</div></div>
+    <div class="ci"><div class="ck" onclick="tog(this)">✓</div><div class="ct">RENFE AVE Granada → Madrid · 8 Jun · <a href="https://www.renfe.com" target="_blank">renfe.com</a> · Upper deck seats together · Book 2–3 weeks ahead for best fares</div></div>
+    <div class="ci"><div class="ck" onclick="tog(this)">✓</div><div class="ct">Transport — Biometrics 29 May · Private car Sheraton → AIMA departing 9:30am · Arrange via hotel concierge in advance</div></div>
+    <div class="ci"><div class="ck" onclick="tog(this)">✓</div><div class="ct">Pena Palace, Sintra — <a href="https://www.parquesdesintra.pt" target="_blank">parquesdesintra.pt</a> · Timed entry · Book 1 week ahead · 30 May</div></div>
+    <div class="ci"><div class="ck" onclick="tog(this)">✓</div><div class="ct">Real Alcázar, Seville — <a href="https://www.alcazarsevilla.org" target="_blank">alcazarsevilla.org</a> · Book 1–2 weeks ahead · First slot 9:30am on 1 Jun</div></div>
+    <div class="ci"><div class="ck" onclick="tog(this)">✓</div><div class="ct">Seville Cathedral &amp; Giralda — <a href="https://www.catedraldesevilla.es" target="_blank">catedraldesevilla.es</a> · Book 1 week ahead · 2 Jun</div></div>
+    <div class="ci"><div class="ck" onclick="tog(this)">✓</div><div class="ct">Flamenco show, Seville — Casa de la Memoria or Tablao El Arenal · Book 1 week ahead · Evening of 2 Jun</div></div>
+    <div class="ci"><div class="ck" onclick="tog(this)">✓</div><div class="ct">Picasso Museum, Málaga — <a href="https://www.museopicassomalaga.org" target="_blank">museopicassomalaga.org</a> · 3–5 days ahead is fine · 4 Jun</div></div>
+    <div class="ci"><div class="ck" onclick="tog(this)">✓</div><div class="ct">Sobrino de Botín, Madrid — <a href="https://www.botin.es" target="_blank">botin.es</a> · Book 2–3 weeks ahead · Dinner 8 Jun</div></div>
+    <div class="ci"><div class="ck" onclick="tog(this)">✓</div><div class="ct">Airport transfer Dubai → Lisbon · Pre-book for 27 May landing · Pre-book Cascais hotel transfer</div></div>
+  </div>
+</div>
+
+<div class="footer">
+  <strong>Raman · Sulochana · Zain</strong> &nbsp;·&nbsp; Portugal &amp; Spain · May – June 2026 &nbsp;·&nbsp; Private
+</div>
+
+<script>
+function tog(el){el.classList.toggle('done');}
+function goTo(id){
+  document.querySelectorAll('nav a').forEach(function(a){a.classList.remove('active');});
+  event.target.classList.add('active');
+  var el=document.getElementById(id);
+  if(el){var y=el.getBoundingClientRect().top+window.scrollY-52;window.scrollTo({top:y,behavior:'smooth'});}
+}
+window.addEventListener('scroll',function(){
+  var ids=['overview','cascais','seville','malaga','granada','madrid','checklist'];
+  var links=document.querySelectorAll('nav a');
+  for(var i=ids.length-1;i>=0;i--){
+    var el=document.getElementById(ids[i]);
+    if(el&&el.getBoundingClientRect().top<=80){
+      links.forEach(function(l){l.classList.remove('active');});
+      if(links[i])links[i].classList.add('active');
+      break;
+    }
+  }
+});
+</script>
+</body>
+</html>
