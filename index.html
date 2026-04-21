@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portugal &amp; Spain · Family Trip 2026 · v4</title>
+<title>Portugal &amp; Spain · Family Trip 2026 · v11</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -221,13 +221,27 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
   .cities-trip { display: none; }
   .cities-list a { padding: 6px 8px; font-size: 12px; }
 }
+
+/* Interactive checklist */
+.check-mark { cursor: pointer; user-select: none; transition: transform 0.1s ease, background 0.15s ease, border-color 0.15s ease, color 0.15s ease; }
+.check-mark:hover { transform: scale(1.08); }
+.check-mark:focus-visible { outline: 2px solid var(--terracotta); outline-offset: 3px; }
+.check-item[data-default="pending"]:not(.is-done) .check-mark { background: var(--terracotta); color: #fff; border-color: var(--terracotta); }
+.check-item[data-default="pending"]:not(.is-done) .check-text strong { color: var(--terracotta-deep); }
+.check-item.is-done .check-mark { background: #2d6a4f; color: #fff; border-color: #2d6a4f; }
+.check-item.is-done .check-text { opacity: 0.55; }
+.check-item.is-done .check-text strong { text-decoration: line-through; color: var(--ink-soft); }
+.checklist-progress { display: inline-block; margin-left: 14px; padding: 4px 12px; background: rgba(45, 106, 79, 0.12); color: #2d6a4f; border-radius: 999px; font-size: 13px; font-weight: 600; font-family: 'Manrope', sans-serif; vertical-align: middle; }
+.checklist-reset { display: inline-block; margin-left: 10px; padding: 4px 12px; background: transparent; color: var(--ink-soft); border: 1px solid rgba(138, 54, 24, 0.25); border-radius: 999px; font-size: 12px; font-family: 'Manrope', sans-serif; cursor: pointer; transition: all 0.15s ease; vertical-align: middle; }
+.checklist-reset:hover { border-color: var(--terracotta); color: var(--terracotta); }
+
 </style>
 </head>
 <body>
 
 <header class="hero">
   <div class="hero-inner">
-    <div class="eyebrow">Family Trip · May–June 2026 · v4</div>
+    <div class="eyebrow">Family Trip · May–June 2026 · v11</div>
     <h1 class="serif">Portugal <em>&amp;</em> Spain</h1>
     <div class="hero-meta">
       <span>Raman · Sulochana · Zain</span>
@@ -244,7 +258,7 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
     <div class="cities-list">
       <a href="#cascais">🇵🇹 Cascais</a>
       <a href="#seville">🇪🇸 Seville</a>
-      <a href="#malaga">🇪🇸 Málaga</a>
+      <a href="#marbella">🇪🇸 Marbella</a>
       <a href="#granada">🇪🇸 Granada</a>
       <a href="#madrid">🇪🇸 Madrid</a>
       <a href="#merida">🇪🇸 Mérida</a>
@@ -257,8 +271,8 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
 
 <section class="block tight">
   <div class="banner">
-    <h3>v4 · 17-day loop, 12 Jun return locked</h3>
-    <p>Original return ticket date kept (12 Jun). Granada trimmed back to 3 nights — the bonus 4th day (Hammam / Córdoba) was the luxury, not a necessity. Everything from Madrid onward shifts one day earlier. <strong>Single rental car</strong>: Cascais pickup 29 May → Lisbon airport drop 12 Jun. No AVE, no rental-handover dance, no cross-border drop fees.</p>
+    <h3>v11 · Interactive checklist · flight booked</h3>
+    <p>All 7 hotels confirmed across Cascais, Seville (EME Catedral Mercer), Estepona (Playa Andaluza), Granada (Hotel Alhambra Palace), Madrid (The Palace Luxury Collection), Mérida (Parador), and Lisbon (Marriott on points). Total accommodation cost: <strong>€9,561 for 16 nights</strong>. Return flight re-route confirmed. Only the single car rental (Cascais → LIS) remains. <strong>Checklist is now interactive</strong> — click any checkbox to toggle its state. Progress saves automatically to your browser (localStorage).</p>
   </div>
 </section>
 
@@ -293,18 +307,18 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
     <div class="transfer-detail">Drive A2 / E90 via Badajoz · ~3.5h · easy motorway</div>
   </div>
   <div class="transfer-row">
-    <div class="transfer-route">Seville → Málaga</div>
-    <div class="transfer-date">3 Jun</div>
-    <div class="transfer-detail">Drive A-92 / AP-46 · ~2h · flat Andalusian motorway</div>
+    <div class="transfer-route">Seville → Marbella</div>
+    <div class="transfer-date">2 Jun</div>
+    <div class="transfer-detail">Drive A-92 / AP-46 / A-7 · ~2h 50min · arrive Estepona by lunch · check in &amp; resort afternoon</div>
   </div>
   <div class="transfer-row">
-    <div class="transfer-route">Málaga → Granada</div>
+    <div class="transfer-route">Estepona → Granada</div>
     <div class="transfer-date">5 Jun pm</div>
-    <div class="transfer-detail">Drive A-92 · ~1.5h · leave after lunch · arrive in time for sunset Mirador San Nicolás</div>
+    <div class="transfer-detail">Drive A-7 east → A-45 / A-92 north · ~2h 45min · leave after lunch · arrive in time for sunset Mirador San Nicolás</div>
   </div>
   <div class="transfer-row">
     <div class="transfer-route">Granada → Madrid</div>
-    <div class="transfer-date">8 Jun</div>
+    <div class="transfer-date">7 Jun</div>
     <div class="transfer-detail">Drive A-44 / A-4 north · ~4h / 420km · through Despeñaperros gorge and La Mancha · leave 9am, arrive 1–2pm · valet park at Madrid hotel</div>
   </div>
   <div class="transfer-row">
@@ -452,18 +466,19 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
   <div class="city-header">
     <span class="city-flag">🇪🇸</span>
     <h2 class="city-name serif">Seville</h2>
-    <div class="city-strap">31 May – 3 June · 3 nights</div>
+    <div class="city-strap">31 May – 2 June · 2 nights · compressed but complete</div>
     <div class="city-tag">Andalusia's jewel</div>
   </div>
   <img class="city-hero" src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1600&q=80" alt="Seville Alcázar">
   <div class="city-body">
     <p class="city-intro">Grand Islamic palaces, orange-tree lined lanes, flamenco drifting from behind closed doors, and food that makes you want to stay another week. June heat enforces the perfect rhythm: out early, hard siesta, beautiful evenings.</p>
     <div class="stay-box">
-      <h4>Where to stay</h4>
-      <div class="area">Barrio Santa Cruz / Cathedral</div>
-      <p>Stay in or immediately adjacent to the old town. Walking distance to Alcázar, Cathedral, and Santa Cruz means you're not battling taxis with a toddler in 35°C heat. Hotel parking essential.</p>
+      <h4>Where to stay · ✓ BOOKED</h4>
+      <div class="area">EME Catedral Mercer Hotel</div>
+      <p>Part of the Mercer group, 5-star, right across from the Seville Cathedral — Day 6's anchor activities (Alcázar 9:30am + Cathedral + Flamenco) are all within 5 min of the front door. Rooftop pool with iconic Cathedral views, valet parking (solves the rental car problem). 31 May – 2 Jun · 2 nights · €936 total.</p>
       <ul>
-        <li><strong>Marriott Bonvoy property</strong> — book via marriott.com for points · confirm parking</li>
+        <li>Bring earplugs — church bells early · ask for higher-floor courtyard-facing room</li>
+        <li>Not Marriott — no Bonvoy points on this one</li>
       </ul>
     </div>
   </div>
@@ -474,7 +489,8 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
       <div class="day-day">Saturday</div>
       <div class="day-title">Arrive + Plaza de España evening</div>
       <ul>
-        <li>Check in · valet park · lunch near hotel · pool</li>
+        <li>Drive Cascais → Seville · arrive ~12:30pm</li>
+        <li>Check in · valet park · lunch near hotel · pool / rest</li>
         <li><strong>Plaza de España at golden hour</strong> — tiled alcoves, canal, rowboats · free</li>
         <li>Dinner Barrio Santa Cruz — El Rinconcillo (est. 1670)</li>
       </ul>
@@ -483,85 +499,94 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
       <div class="day-num">Day 6</div>
       <div class="day-date">1 Jun</div>
       <div class="day-day">Sunday</div>
-      <div class="day-title">Real Alcázar + María Luisa Park</div>
+      <div class="day-title">Alcázar + Cathedral + Flamenco</div>
       <ul>
-        <li><strong>Real Alcázar</strong> — book at alcazarsevilla.org · first slot 9:30am · 2.5–3h</li>
-        <li>Parque de María Luisa — duck ponds, shaded paths, adjacent to Alcázar</li>
-        <li>Late lunch · <strong>hard siesta 2–5:30pm</strong></li>
-        <li>Rooftop bar near the Cathedral — Giralda lit gold at sunset</li>
+        <li><strong>Real Alcázar</strong> — book at alcazarsevilla.org · 9:30am first slot · peacocks, fountains, royal gardens · 2.5h</li>
+        <li>Walk 5 min next door to <strong>Seville Cathedral &amp; Giralda</strong> — book at catedraldesevilla.es · world's largest Gothic cathedral · ramp climb (no stairs) · 1h</li>
+        <li>Lunch in Santa Cruz · then <strong>hard siesta 3–5:30pm</strong> — non-negotiable, 35°C outside</li>
+        <li>Early evening tapas walk in Santa Cruz · order what comes</li>
+        <li><strong>Flamenco — Casa de la Memoria</strong> · 7pm or 9pm slot · 1 hour · book 1 week ahead</li>
+        <li>Late dinner if energy holds · otherwise straight back to hotel</li>
       </ul>
     </div>
     <div class="day">
       <div class="day-num">Day 7</div>
       <div class="day-date">2 Jun</div>
       <div class="day-day">Monday</div>
-      <div class="day-title">Cathedral + Triana + Flamenco</div>
-      <ul>
-        <li><strong>Seville Cathedral &amp; Giralda</strong> — world's largest Gothic cathedral · book at catedraldesevilla.es</li>
-        <li>Barrio de Triana — Mercado de Triana for lunch in the 19th-century iron market</li>
-        <li>Hard siesta 2–5pm</li>
-        <li><strong>Flamenco — Casa de la Memoria</strong> · 1 hour · book 1 week ahead</li>
-      </ul>
-    </div>
-    <div class="day">
-      <div class="day-num">Day 8</div>
-      <div class="day-date">3 Jun</div>
-      <div class="day-day">Tuesday</div>
-      <div class="day-title">Morning Seville + drive to Málaga</div>
+      <div class="day-title">Drive Seville → Marbella</div>
       <ul>
         <li>Final Santa Cruz walk in morning light · check out by 10am</li>
-        <li>Drive A-92 / AP-46 → Málaga · ~2h · flat and easy</li>
-        <li>Optional: Antequera halfway — hilltop town, 30-min Zain break</li>
-        <li>Arrive Málaga early afternoon · beach immediately</li>
+        <li>Drive A-92 / AP-46 / A-7 → Marbella · ~2.5h</li>
+        <li>One 20-min stop at a service area for Zain (around Antequera, halfway)</li>
+        <li>Arrive Marriott's Playa Andaluza (Estepona) by 1pm · check in · resort afternoon</li>
+        <li>Beach + pool + first taste of Costa del Sol · early dinner on-site</li>
       </ul>
     </div>
   </div>
 </section>
 
-<section id="malaga" class="city">
+<section id="marbella" class="city">
   <div class="city-header">
     <span class="city-flag">🇪🇸</span>
-    <h2 class="city-name serif">Málaga</h2>
-    <div class="city-strap">3 – 5 June · 2 nights</div>
-    <div class="city-tag">Beach + the Roman baths trip</div>
+    <h2 class="city-name serif">Costa del Sol</h2>
+    <div class="city-strap">2 – 5 June · 3 nights · Estepona resort base</div>
+    <div class="city-tag">The recovery stop</div>
   </div>
-  <img class="city-hero" src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1600&q=80" alt="Málaga coast">
+  <img class="city-hero" src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1600&q=80" alt="Costa del Sol coast">
   <div class="city-body">
-    <p class="city-intro">Two nights to keep the trip moving — beach, espetos, and the Manilva Roman baths day. The casualty is a deep Picasso Museum / Alcazaba session, which is worth a future weekend trip from Dubai on its own.</p>
+    <p class="city-intro">Three nights of beach resort to break up an otherwise constantly-moving trip. After 6 days of driving, biometrics, jet lag, and Andalusian heat, this is where the family pace genuinely resets. Marriott's Playa Andaluza sits on the Estepona shoreline, ~30 km west of Marbella town. You skip the Picasso/old-town deep dive in favour of pools, sand, and sleep — and the trip is healthier for it. Estepona is also the closest base to Manilva (only 10–15 min west), so the Roman baths day trip becomes a short hop, not an expedition.</p>
     <div class="stay-box">
-      <h4>Where to stay</h4>
-      <div class="area">Port / Centro Histórico</div>
-      <p>On or near the port (Muelle Uno) or within the historic centre. Walking distance to La Malagueta beach. Hotel must have parking — central Málaga street parking is brutal.</p>
+      <h4>Where to stay · ✓ BOOKED</h4>
+      <div class="area">Marriott's Playa Andaluza, Estepona</div>
+      <p>Marriott Vacation Club property on the Costa del Sol — apartment-style accommodations with full kitchens, multiple pools, direct beach access. ~10–15 min drive to Manilva (huge advantage for the Roman baths day trip), ~30 min to Marbella old town, ~1h to Málaga centre. Free parking. 2–5 Jun · 3 nights · €1,234 total.</p>
       <ul>
-        <li><strong>Marriott Bonvoy property</strong> — confirm parking included</li>
+        <li>Vacation Club property — Bonvoy points/elite credit rules differ from standard Marriott hotels; check at check-in</li>
+        <li>Expect a timeshare sales pitch at arrival — politely decline once and they leave you alone</li>
+        <li>Request a sea-view or garden-view apartment when you arrive</li>
       </ul>
     </div>
   </div>
   <div class="days">
     <div class="day">
+      <div class="day-num">Day 7</div>
+      <div class="day-date">2 Jun</div>
+      <div class="day-day">Monday</div>
+      <div class="day-title">Arrive Estepona + first beach evening</div>
+      <ul>
+        <li>Arrive from Seville ~1pm · check in at Playa Andaluza · grocery run at on-site Marketplace if cooking dinner in</li>
+        <li>Straight to Matas Verdes Beach — wide, sandy, resort-maintained · sun loungers right at the resort</li>
+        <li>Late-afternoon swim · Kids' pool with slide if Zain wants</li>
+        <li>Dinner at Solera Restaurant on the resort terrace · early night · everyone's tired from the drive</li>
+      </ul>
+    </div>
+    <div class="day star">
       <div class="day-num">Day 8</div>
       <div class="day-date">3 Jun</div>
       <div class="day-day">Tuesday</div>
-      <div class="day-title">Arrive + La Malagueta beach</div>
+      <div class="day-title">Manilva day trip — coastal drive</div>
       <ul>
-        <li>Check in early afternoon · valet park · swimwear on · 15 min walk to La Malagueta</li>
-        <li>Calm Mediterranean water · sunbeds · 3 hours minimum</li>
-        <li><strong>Espetos de sardinas</strong> — sardines grilled on bamboo over open fire at the beach chiringuito · the Málaga dish</li>
-        <li>Evening: Muelle Uno port walk · dinner on Calle Larios</li>
+        <li>Leave 10am · A-7 coastal road west · ~15 min from Estepona · a short hop, not an expedition</li>
+        <li><strong>Manilva</strong> — whitewashed hilltop village off the tourist trail · views to Gibraltar</li>
+        <li><strong>Baños de la Hedionda</strong> — ancient Roman sulphur baths in cliffs below the village · shallow natural pools · Zain splashes around · one of the most unusual stops on the trip</li>
+        <li>Pick up local Manilva muscatel · €5 from any shop</li>
+        <li>15 min down to <strong>La Duquesa marina</strong> · harbour-side seafood lunch</li>
+        <li>Back at the resort by 3pm · beach round 2 · Kids' pool with slide for Zain</li>
+        <li>Dinner at Solera (resort restaurant) or Pizza Cucina on the terrace</li>
       </ul>
     </div>
     <div class="day star">
       <div class="day-num">Day 9</div>
       <div class="day-date">4 Jun</div>
       <div class="day-day">Wednesday</div>
-      <div class="day-title">Manilva day trip — coastal drive</div>
+      <div class="day-title">Pure resort day — the recovery</div>
       <ul>
-        <li>Leave 9:30am · A-7 coastal road west · ~45 min · take the coastal route, not the toll motorway</li>
-        <li><strong>Manilva</strong> — whitewashed hilltop village off the tourist trail · views to Gibraltar</li>
-        <li><strong>Baños de la Hedionda</strong> — ancient Roman sulphur baths in cliffs below the village · shallow natural pools · Zain splashes around · one of the most unusual stops on the trip</li>
-        <li>Pick up local Manilva muscatel · €5 from any shop</li>
-        <li>15 min down to La Duquesa marina · harbour-side seafood lunch</li>
-        <li>Back in Málaga 4–5pm · beach round 2 or hotel pool · early dinner · pack for Granada</li>
+        <li>No driving, no agenda, no alarm</li>
+        <li>Morning: drop Zain at the <strong>Kids' Club</strong> for 2–3 hours of structured activities (handcrafts, water games, face painting) · adults get a proper rest block by the adult pool</li>
+        <li>Pick up Zain around lunch · long seafood lunch at the beach grill with wine</li>
+        <li>Afternoon: La Tortuga kids' pool with slide · mini golf, rock climbing wall, giant chess/checkers on-site</li>
+        <li>Spa appointment for Sulochana if she wants (book day before at the resort spa)</li>
+        <li>Late afternoon option: 10-min drive to <strong>Puerto Banús</strong> for an evening marina walk and dinner — luxury yachts, glamorous scene, Zain loves looking at the boats · OR 15 min into <strong>Marbella Old Town</strong> for Plaza de los Naranjos and a local taverna · OR stay at the resort</li>
+        <li>Pack for Granada · early to bed</li>
       </ul>
     </div>
     <div class="day">
@@ -570,10 +595,10 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
       <div class="day-day">Thursday</div>
       <div class="day-title">Slow morning + drive to Granada</div>
       <ul>
-        <li>Slow breakfast · check out by 11am</li>
-        <li>Optional quick stop: <strong>Picasso Museum</strong> if energy is good (opens 10am, ~1h fast visit) — or skip and just walk Calle Larios for last Málaga coffee</li>
-        <li>Drive A-92 → Granada · ~1.5h · leave by 1pm at the latest</li>
-        <li>Arrive Granada ~2:30pm · check in · brief rest</li>
+        <li>Slow breakfast at the resort · last beach hour</li>
+        <li>Check out by 11am · car loaded</li>
+        <li>Drive A-7 east → A-92 north → Granada · ~2h 15min</li>
+        <li>Arrive Granada ~2pm · check in · brief rest</li>
         <li>Carrera del Darro evening walk — river street below the Alhambra hill</li>
         <li><strong>Sunset at Mirador de San Nicolás</strong> — iconic view across to the Alhambra · arrive by 8pm · primes you for tomorrow morning</li>
         <li>Light dinner Plaza Nueva · early to bed (Alhambra entry tomorrow AM)</li>
@@ -586,19 +611,20 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
   <div class="city-header">
     <span class="city-flag">🇪🇸</span>
     <h2 class="city-name serif">Granada</h2>
-    <div class="city-strap">5 – 8 June · 3 nights · centrepiece</div>
-    <div class="city-tag">The emotional peak</div>
+    <div class="city-strap">5 – 7 June · 2 nights · Alhambra-focused</div>
+    <div class="city-tag">The morning everything turns on</div>
   </div>
   <img class="city-hero" src="https://images.unsplash.com/photo-1583037189850-1921ae7c6c22?auto=format&fit=crop&w=1600&q=80" alt="Alhambra">
   <div class="city-body">
-    <p class="city-intro">At 738m altitude it's cooler than Seville and Málaga — a genuine relief. The Alhambra is in a category of its own. The Albaicín is the most atmospheric urban neighbourhood in Andalusia. Free tapas with every drink at every bar. Three tight, full nights — Alhambra the day after arrival, Albaicín the day after that, drive to Madrid the morning after.</p>
+    <p class="city-intro">At 738m altitude it's cooler than Seville and Marbella — a genuine relief. The Alhambra is in a category of its own, and with the morning entry locked in, the whole stop is built around it. Two nights covers the essentials cleanly: arrive afternoon for the iconic Mirador San Nicolás sunset, big morning at the palace, guided Albaicín tour through the Moorish quarter at sunset, free tapas evening to celebrate, drive out the next morning. With the booked Albaicín tour, you don't actually lose anything by trimming to 2 nights — you just get a more guided version of the neighbourhood walk.</p>
     <div class="stay-box">
-      <h4>Where to stay</h4>
-      <div class="area">Plaza Nueva / Cathedral</div>
-      <p>Historic centre within walking distance of Plaza Nueva — gateway to both the Alhambra hill and the Albaicín. Avoid the Albaicín itself for accommodation with a toddler — the lanes are steep and impractical with luggage. Hotel parking essential.</p>
+      <h4>Where to stay · ✓ BOOKED</h4>
+      <div class="area">Hotel Alhambra Palace · on the Alhambra hill</div>
+      <p>1910 grande dame inspired by the Nasrid Palace, refurbished 2017 · sits on the Alhambra hill 5–10 min walk from the palace entrance · panoramic terrace over Granada (one of the great sunset spots in the city) · on-site restaurant Príncipe · parking on site · public bus from the hotel entrance every 10 min into the city centre, 800m to downtown. 5–7 Jun · 2 nights · €1,150 total.</p>
       <ul>
-        <li><strong>Marriott Bonvoy property</strong> · confirm parking</li>
-        <li><strong>Parador de Granada</strong> if available — sits inside the Alhambra grounds, unlike anywhere else</li>
+        <li>Not a Marriott property — no Bonvoy points, chosen for proximity to the Alhambra entrance on the headline morning</li>
+        <li>Request a city-view or Sierra Nevada-view room at check-in</li>
+        <li>Cocktails on the panoramic terrace before bed — the move</li>
       </ul>
     </div>
   </div>
@@ -613,34 +639,22 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
       <div class="day-num">Day 11</div>
       <div class="day-date">6 Jun</div>
       <div class="day-day">Friday</div>
-      <div class="day-title">The Alhambra — full morning</div>
+      <div class="day-title">Alhambra morning + Albaicín tour evening</div>
       <ul>
-        <li>Early breakfast · taxi or 15-min walk to gates · arrive 20 min before timed entry</li>
+        <li>Early breakfast at the hotel · 5–10 min walk to the Alhambra gates · arrive 20 min before timed entry</li>
         <li><strong>Generalife Gardens</strong> — terraced water gardens, fountain channels, cypress alleys · 1h · Zain absorbed by the fountains</li>
         <li><strong>Nasrid Palaces</strong> — Court of Lions, Comares, intricate stucco · pinnacle of Islamic architecture · 1.5h</li>
         <li><strong>Alcazaba towers</strong> — views over Granada and Sierra Nevada · Zain climbs the battlements</li>
-        <li>Exit by 1pm · lunch · <strong>hard siesta 2–5pm</strong></li>
-        <li>Evening: <strong>free tapas bar-hop</strong> around Plaza Nueva · €15 feeds both adults well</li>
+        <li>Exit by 1pm · taxi or bus down to lower Albaicín · lunch on Calle Calderería Nueva (Moorish teahouses) · <strong>hard siesta back at the hotel 2–5pm</strong> — non-negotiable, you've got more walking ahead</li>
+        <li><strong>Albaicín guided tour</strong> (booked) — Calle Calderería Nueva, whitewashed carmenes, Moorish lanes, ending at <strong>Mirador de San Nicolás for sunset</strong> · the iconic view of the Alhambra lit gold</li>
+        <li>Evening: <strong>free tapas bar-hop</strong> around Plaza Nueva · €15 feeds both adults well · final Granada dinner — Botánico or Ruta del Azafrán · taxi back up to the hotel (€7)</li>
+        <li>Optional nightcap: cocktails on the hotel's panoramic terrace before bed</li>
       </ul>
     </div>
     <div class="day">
       <div class="day-num">Day 12</div>
       <div class="day-date">7 Jun</div>
       <div class="day-day">Saturday</div>
-      <div class="day-title">Albaicín + Cathedral + Sacromonte</div>
-      <ul>
-        <li>Albaicín morning walk — Calle Calderería Nueva · Moorish teahouses, craft shops, whitewashed carmenes, cats everywhere</li>
-        <li>Granada Cathedral &amp; Royal Chapel — Ferdinand &amp; Isabella buried here · magnificent Renaissance interior · 1h</li>
-        <li><strong>Free tapas lunch</strong> — Bar Los Diamantes, La Cueva de 1900 · 2–3 different bars</li>
-        <li>Long siesta — nobody goes anywhere</li>
-        <li>Sacromonte evening — gypsy cave quarter carved into the hillside above the Albaicín</li>
-        <li>Final Granada dinner: Botánico or Ruta del Azafrán</li>
-      </ul>
-    </div>
-    <div class="day">
-      <div class="day-num">Day 13</div>
-      <div class="day-date">8 Jun</div>
-      <div class="day-day">Sunday</div>
       <div class="day-title">Drive Granada → Madrid</div>
       <ul>
         <li>Hotel breakfast · check out by 9am · car loaded</li>
@@ -658,37 +672,40 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
   <div class="city-header">
     <span class="city-flag">🇪🇸</span>
     <h2 class="city-name serif">Madrid</h2>
-    <div class="city-strap">8 – 10 June · 2 nights · capital interlude</div>
-    <div class="city-tag">Retiro, Prado, food, west to Mérida</div>
+    <div class="city-strap">7 – 10 June · 3 nights · capital interlude</div>
+    <div class="city-tag">Retiro, Prado, Reina Sofía, food, west to Mérida</div>
   </div>
   <img class="city-hero" src="https://images.unsplash.com/photo-1543785734-4b6e564642f8?auto=format&fit=crop&w=1600&q=80" alt="Retiro Park">
   <div class="city-body">
-    <p class="city-intro">Two nights is enough to do Madrid properly without inflating the trip. Retiro for Zain, Prado for the adults, exceptional food in the evenings, then west to Mérida. The best-fed stretch of the trip.</p>
+    <p class="city-intro">Three nights gives you Madrid properly: arrival evening + Botín dinner, a big Retiro &amp; Prado day, a "your own pace" day for Reina Sofía and food, then a slow morning before driving west. The best-fed stretch of the trip — and the only stretch with two genuine recovery breakfasts in a row.</p>
     <div class="stay-box">
-      <h4>Where to stay</h4>
-      <div class="area">Jerónimos / Retiro / Paseo del Prado</div>
-      <p>Cultural triangle between the Prado, Retiro Park, and Paseo del Prado. Walking distance to everything. Avoid Sol/Gran Vía noise. <strong>Confirm valet parking when booking</strong> — Madrid centre street parking is paid + complicated, and you have the car for these 2 nights.</p>
+      <h4>Where to stay · ✓ BOOKED</h4>
+      <div class="area">The Palace, a Luxury Collection Hotel · Plaza de las Cortes</div>
+      <p>Iconic 1912 Belle Époque hotel, reopened 2025 after a €90m renovation as Marriott Luxury Collection (formerly The Westin Palace). Stained-glass-domed La Rotonda restaurant, central location in Barrio de las Letras on the Paisaje de la Luz UNESCO zone. 6-min walk to the Prado, 10-min to Retiro, 10-min to Reina Sofía, 15-min to Mercado de San Miguel. Valet parking on-site. 7–10 Jun · 3 nights · Junior/Palace Suite · €4,726 total.</p>
       <ul>
-        <li><strong>Marriott Bonvoy property</strong> in Jerónimos / Retiro · valet ~€30–40/night</li>
+        <li>Suite booked — accommodates 3 cleanly, no 2-room workaround needed</li>
+        <li>Marriott Bonvoy Luxury Collection — points and elite credits earn normally</li>
+        <li>If booked directly and you have Amex Platinum, call Marriott post-booking to ask about linking Fine Hotels + Resorts benefits (F&amp;B credit, upgrades) where possible</li>
+        <li>Ask at check-in about connecting rooms if the suite layout doesn't have a separate kid-sleeping area</li>
       </ul>
     </div>
   </div>
   <div class="days">
     <div class="day">
-      <div class="day-num">Day 13</div>
-      <div class="day-date">8 Jun</div>
-      <div class="day-day">Sunday</div>
+      <div class="day-num">Day 12</div>
+      <div class="day-date">7 Jun</div>
+      <div class="day-day">Saturday</div>
       <div class="day-title">Arrive Madrid + evening</div>
       <ul>
         <li>Arrive 1–2pm after the Granada drive · valet park · check in · rest</li>
         <li>Evening Paseo del Prado stroll · the great avenue between Atocha and Cibeles</li>
-        <li><strong>Dinner: Sobrino de Botín</strong> — booked ahead</li>
+        <li><strong>Dinner: Sobrino de Botín</strong> (est. 1725, oldest restaurant in the world) — roast suckling pig · book at botin.es</li>
       </ul>
     </div>
     <div class="day star">
-      <div class="day-num">Day 14</div>
-      <div class="day-date">9 Jun</div>
-      <div class="day-day">Monday</div>
+      <div class="day-num">Day 13</div>
+      <div class="day-date">8 Jun</div>
+      <div class="day-day">Sunday</div>
       <div class="day-title">Retiro + Prado</div>
       <ul>
         <li><strong>Retiro Park</strong> — rowboat on Estanque Grande (Zain talks about it for months) · Crystal Palace · arrive 9:30am</li>
@@ -698,14 +715,27 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
       </ul>
     </div>
     <div class="day">
+      <div class="day-num">Day 14</div>
+      <div class="day-date">9 Jun</div>
+      <div class="day-day">Monday</div>
+      <div class="day-title">Reina Sofía + Madrid at your own pace</div>
+      <ul>
+        <li>Slow start · long hotel breakfast</li>
+        <li><strong>Museo Reina Sofía</strong> — Picasso's <em>Guernica</em> is here · also Dalí, Miró · 1.5h is enough · 10am opening · book online to skip the queue</li>
+        <li><strong>Mercado de San Miguel</strong> for lunch — oysters, jamón, vermouth · the great covered iron market by Plaza Mayor</li>
+        <li>Plaza Mayor + Puerta del Sol stroll · Templo de Debod (genuine Egyptian temple in the city, free, kid-friendly, scenic) if energy</li>
+        <li>Hard siesta or hotel pool · everyone's earned it</li>
+        <li>Final Madrid dinner: <strong>Cinco Jotas</strong> (best jamón ibérico in the city) or wander Calle de Huertas for a long tapas evening</li>
+      </ul>
+    </div>
+    <div class="day">
       <div class="day-num">Day 15</div>
       <div class="day-date">10 Jun</div>
       <div class="day-day">Tuesday</div>
       <div class="day-title">Madrid morning + drive to Mérida</div>
       <ul>
         <li>Late breakfast · pack &amp; check out</li>
-        <li><strong>Mercado de San Miguel</strong> (near Plaza Mayor) — oysters, jamón, vermouth · opens 10am</li>
-        <li>Plaza Mayor + Puerta del Sol quick walk</li>
+        <li>Final walk: Royal Palace exterior + Plaza de Oriente · or coffee in Chueca</li>
         <li>Retrieve car from valet · leave Madrid by 12pm</li>
         <li>Drive A-5 west · ~3.5h / 340km · one Zain-break around Talavera de la Reina (~1h45 in)</li>
         <li>Arrive Mérida late afternoon · check in</li>
@@ -735,13 +765,12 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
   <div class="city-body">
     <p class="city-intro">Founded as Emerita Augusta in 25 BC, capital of Roman Lusitania, and home to the most extensive and best-preserved Roman ruins in all of Spain. The 790-metre Puente Romano is the longest surviving Roman bridge in the world. The theatre still hosts performances every summer. Compact, walkable, almost tourist-free, half the price of the big cities — and exactly halfway between Madrid and Lisbon.</p>
     <div class="stay-box">
-      <h4>Where to stay</h4>
-      <div class="area">Compact historic centre</div>
-      <p>Stay within walking distance of Plaza de España. Roman Theatre 5 min, Temple of Diana 2 min, Roman Bridge 8 min. Driving the centre is hard (very narrow streets); pick a hotel with parking.</p>
+      <h4>Where to stay · ✓ BOOKED</h4>
+      <div class="area">Parador de Mérida</div>
+      <p>Converted 18th-century convent in the historic centre. Walking distance to Plaza de España, Roman Theatre (5 min), Temple of Diana (2 min), Roman Bridge (8 min). On-site parking — key since Mérida's old town lanes are very narrow. Courtyard dining, quiet terraces, reliable Parador quality. 10–11 Jun · 1 night · €280 total.</p>
       <ul>
-        <li><strong>Parador de Mérida</strong> — converted 18th-century convent, best in the city · parking</li>
-        <li><strong>Ilunión Mérida Palace</strong> — central on Plaza de España · Moorish decor</li>
-        <li><strong>AC Hotel Mérida Palacio</strong> — Marriott Bonvoy · central · simpler</li>
+        <li>Not Marriott — but one night, transit stop, so points don't matter</li>
+        <li>Request a courtyard-facing room — quieter than the street side</li>
       </ul>
     </div>
   </div>
@@ -820,15 +849,14 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
   </div>
   <img class="city-hero" src="https://images.unsplash.com/photo-1548707309-dcebeab9ea9b?auto=format&fit=crop&w=1600&q=80" alt="Lisbon">
   <div class="city-body">
-    <p class="city-intro">You only saw Lisbon as a day-trip from Cascais on the way in. This time, stay central — close it out properly with one easy night, dinner on the river, pastéis de nata, and a calm morning before the airport. No rush, no scramble.</p>
+    <p class="city-intro">One easy final night before the flight home. Lisbon Marriott sits in a quieter residential pocket in northwestern Lisbon — 13 min to the airport for tomorrow's departure, 15 min to Belém's waterfront (pastéis de nata at source, Monument to the Discoveries, Jerónimos Monastery), 15 min to central Chiado/Baixa if you fancy dinner there. After 16 days, this is about winding down, not sightseeing sprints.</p>
     <div class="stay-box">
-      <h4>Where to stay</h4>
-      <div class="area">Chiado / Baixa / Avenida da Liberdade</div>
-      <p>Walking distance to Praça do Comércio, Time Out Market, Chiado. Need parking — most central Lisbon hotels offer valet.</p>
+      <h4>Where to stay · ✓ BOOKED</h4>
+      <div class="area">Lisbon Marriott Hotel · Praça de Espanha</div>
+      <p>Full-service 4-star Marriott with outdoor pool (one last swim for Zain), spacious rooms by European standards, valet parking €25/day. 13 min to LIS airport, 15 min to Belém, 15 min to Chiado. Executive lounge if your elite status unlocks it. 11–12 Jun · 1 night · points redemption / free-night cert · €0 cash outlay.</p>
       <ul>
-        <li><strong>Pousada de Lisboa</strong> — former bank on Praça do Comércio · Marriott Bonvoy · iconic</li>
-        <li><strong>Tivoli Avenida Liberdade</strong> — Marriott Bonvoy · valet parking</li>
-        <li><strong>1908 Lisboa Hotel</strong> — boutique character · Intendente</li>
+        <li>Have your rental car delivered back to LIS in the morning — 13 min drive, drop at Terminal 1 return area, then check in for flight</li>
+        <li>Dinner options: Belém (family-friendly, riverside) or drive 15 min into central Lisbon for Cervejaria Ramiro</li>
       </ul>
     </div>
   </div>
@@ -839,11 +867,11 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
       <div class="day-day">Wednesday</div>
       <div class="day-title">Arrive Lisbon evening</div>
       <ul>
-        <li>Check in central · valet park · drop bags</li>
-        <li><strong>Praça do Comércio</strong> sunset walk · Tagus river · arch and statue</li>
-        <li>Up to Chiado · pastéis de nata at <strong>Manteigaria</strong> (better than Belém arguably)</li>
-        <li>Dinner: <strong>Cervejaria Ramiro</strong> for proper Portuguese seafood (loud, busy, perfect) · or grazing at Time Out Market</li>
-        <li>Easy night · pack the international bags</li>
+        <li>Arrive from Mérida via Évora · check in at Lisbon Marriott · valet park · drop bags · pool if Zain has energy</li>
+        <li>Option A (easier): 10 min drive to <strong>Belém</strong> — sunset walk along the Tagus, Monument to the Discoveries, Belém Tower from the outside</li>
+        <li>Option B (livelier): 15 min drive into central Lisbon — <strong>Praça do Comércio</strong> sunset walk, Chiado stroll, pastéis de nata at <strong>Manteigaria</strong></li>
+        <li>Dinner: <strong>Cervejaria Ramiro</strong> (drive 15 min, Portuguese seafood institution) or a quieter Belém restaurant · or simply dine at the hotel if everyone's cooked</li>
+        <li>Back to hotel · pack the international bags · early night</li>
       </ul>
     </div>
     <div class="day">
@@ -852,10 +880,10 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
       <div class="day-day">Thursday</div>
       <div class="day-title">Last morning + fly Lisbon → Dubai</div>
       <ul>
-        <li>Slow morning · hotel breakfast · final coffee on Rua Garrett</li>
-        <li>If route via Belém makes sense: <strong>pastéis de Belém</strong> (the original 1837 bakery) for the road</li>
-        <li>Drop car at <strong>Lisbon Airport (LIS)</strong> · refuel before drop · 30 min buffer</li>
-        <li>Check in · 3h before international departure</li>
+        <li>Slow morning · hotel breakfast · final swim if Zain wants</li>
+        <li>Optional: 10 min drive to Belém for <strong>pastéis de Belém</strong> (the original 1837 bakery) for the road</li>
+        <li>13 min drive to <strong>Lisbon Airport (LIS)</strong> · refuel before drop · aim to be at airport 3h before departure</li>
+        <li>Drop car at Terminal 1 rental return · check in · security</li>
         <li>Flight Lisbon → Dubai · arrive same evening / early 13 Jun</li>
       </ul>
     </div>
@@ -865,9 +893,9 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
 <section id="checklist" class="checklist-section">
   <div class="checklist-inner">
     <h2 class="serif">Pre-trip booking checklist</h2>
-    <p class="sub">v4 · 12 Jun return locked. Items in <strong>bold</strong> are the ones that need action this week.</p>
+    <p class="sub">v11 · all hotels booked, flight confirmed. €9,561 total. Only <strong>car rental</strong> remains. <span id="checklist-progress" class="checklist-progress">0 of 0 done</span><button id="checklist-reset" class="checklist-reset" title="Reset all items to their default state">reset</button></p>
 
-    <div class="check-item">
+    <div class="check-item" data-id="alhambra" data-default="done">
       <div class="check-mark">✓</div>
       <div class="check-text">
         <strong>Alhambra · BOOKED</strong>
@@ -875,63 +903,71 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
       </div>
     </div>
 
-    <div class="check-item">
+    <div class="check-item" data-id="albaicin-tour" data-default="done">
       <div class="check-mark">✓</div>
       <div class="check-text">
-        <strong>Cascais hotel</strong>
-        Sheraton Cascais Resort · 27 May – 31 May · 4 nights · confirmed
+        <strong>Albaicín guided tour · BOOKED</strong>
+        Late afternoon / evening of 6 Jun · ends at Mirador de San Nicolás for sunset · stacks perfectly with the Alhambra morning
       </div>
     </div>
 
-    <div class="check-item">
+    <div class="check-item" data-id="cascais-hotel" data-default="done">
       <div class="check-mark">✓</div>
       <div class="check-text">
-        <strong>Seville hotel</strong>
-        Santa Cruz / Cathedral · 31 May – 3 Jun · 3 nights · Marriott Bonvoy · confirm parking
+        <strong>Cascais hotel — Sheraton Cascais Resort · BOOKED</strong>
+        <strong>27–31 May · 4 nights · €1,235</strong> · Marriott Bonvoy confirmed
       </div>
     </div>
 
-    <div class="check-item urgent">
-      <div class="check-mark">!</div>
+    <div class="check-item" data-id="seville-hotel" data-default="done">
+      <div class="check-mark">✓</div>
       <div class="check-text">
-        <strong>Málaga hotel — REBOOK to 2 nights</strong>
-        Port / Centro Histórico · <strong>3–5 Jun · 2 nights (was 3)</strong> · Marriott Bonvoy · parking
+        <strong>Seville hotel — EME Catedral Mercer · BOOKED</strong>
+        <strong>31 May – 2 Jun · 2 nights · €936</strong> · right across from the Cathedral · rooftop pool with Cathedral views · valet parking · Day 6 walks start from the hotel doorstep
       </div>
     </div>
 
-    <div class="check-item urgent">
-      <div class="check-mark">!</div>
+    <div class="check-item" data-id="playa-andaluza" data-default="done">
+      <div class="check-mark">✓</div>
       <div class="check-text">
-        <strong>Granada hotel</strong>
-        Plaza Nueva / Cathedral · <strong>5–8 Jun · 3 nights</strong> · Marriott Bonvoy · parking · lock this before Alhambra-week pricing kicks in
+        <strong>Marriott's Playa Andaluza — 3 nights · BOOKED</strong>
+        Estepona, Costa del Sol · <strong>2–5 Jun · 3 nights · €1,234</strong> · Marriott Vacation Club property · Kids' Club + La Tortuga kids' pool with slide · free parking · 15 min to Manilva, 10 min to Puerto Banús, 15 min to Marbella old town
       </div>
     </div>
 
-    <div class="check-item urgent">
-      <div class="check-mark">!</div>
+    <div class="check-item" data-id="granada-hotel" data-default="done">
+      <div class="check-mark">✓</div>
       <div class="check-text">
-        <strong>Madrid hotel — book 2 nights with valet</strong>
-        Jerónimos / Retiro · <strong>8–10 Jun · 2 nights</strong> · Marriott Bonvoy · <strong>confirm valet parking included or available (~€30–40/night)</strong> — non-negotiable, you have the car
+        <strong>Granada hotel — Hotel Alhambra Palace · BOOKED</strong>
+        <strong>5–7 Jun · 2 nights · €1,150</strong> · 5-star, 1910 grande dame on the Alhambra hill · 5–10 min walk to Alhambra entrance · panoramic terrace · request city/Sierra Nevada-view room at check-in
       </div>
     </div>
 
-    <div class="check-item urgent">
-      <div class="check-mark">+</div>
+    <div class="check-item" data-id="madrid-hotel" data-default="done">
+      <div class="check-mark">✓</div>
       <div class="check-text">
-        <strong>Mérida hotel</strong>
-        Parador de Mérida (preferred), Ilunión Mérida Palace, or AC Hotel Mérida Palacio · <strong>10–11 Jun · 1 night</strong> · need parking
+        <strong>Madrid hotel — The Palace, a Luxury Collection Hotel · BOOKED</strong>
+        <strong>7–10 Jun · 3 nights · €4,726</strong> · Junior/Palace Suite (sleeps 3) · iconic 1912 hotel, renovated 2025 · opposite the Prado · Marriott Bonvoy earning confirmed
       </div>
     </div>
 
-    <div class="check-item urgent">
-      <div class="check-mark">+</div>
+    <div class="check-item" data-id="merida-hotel" data-default="done">
+      <div class="check-mark">✓</div>
       <div class="check-text">
-        <strong>Lisbon hotel</strong>
-        Chiado / Baixa / Avenida da Liberdade · <strong>11–12 Jun · 1 night</strong> · valet parking essential
+        <strong>Mérida hotel — Parador de Mérida · BOOKED</strong>
+        <strong>10–11 Jun · 1 night · €280</strong> · 16th-century former convent, Plaza de la Constitución · 5-min walk to Roman Theatre · on-site parking
       </div>
     </div>
 
-    <div class="check-item urgent">
+    <div class="check-item" data-id="lisbon-hotel" data-default="done">
+      <div class="check-mark">✓</div>
+      <div class="check-text">
+        <strong>Lisbon hotel — Lisbon Marriott Hotel · BOOKED</strong>
+        <strong>11–12 Jun · 1 night · 0 cash (Marriott Bonvoy points redemption)</strong> · 13 min drive to LIS airport · outdoor pool for a final Zain swim · valet parking · clean morning departure
+      </div>
+    </div>
+
+    <div class="check-item" data-id="car-rental" data-default="pending">
       <div class="check-mark">!</div>
       <div class="check-text">
         <strong>Single car rental — Cascais → Lisbon Airport · ~14 days</strong>
@@ -939,15 +975,15 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
       </div>
     </div>
 
-    <div class="check-item urgent">
-      <div class="check-mark">!</div>
+    <div class="check-item" data-id="return-flight" data-default="pending">
+      <div class="check-mark">✓</div>
       <div class="check-text">
-        <strong>Return flight — change destination only</strong>
-        Existing 12 Jun ticket Madrid → Dubai · <strong>change to Lisbon → Dubai 12 Jun</strong> (date stays the same) · should be a route change rather than full rebook · contact Emirates or original travel agent
+        <strong>Return flight — Lisbon → Dubai · BOOKED</strong>
+        12 Jun Lisbon (LIS) → Dubai · route change confirmed · same 12 Jun date preserved
       </div>
     </div>
 
-    <div class="check-item">
+    <div class="check-item" data-id="pena-palace" data-default="pending">
       <div class="check-mark">✓</div>
       <div class="check-text">
         <strong>Pena Palace, Sintra</strong>
@@ -955,7 +991,7 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
       </div>
     </div>
 
-    <div class="check-item">
+    <div class="check-item" data-id="real-alcazar" data-default="pending">
       <div class="check-mark">✓</div>
       <div class="check-text">
         <strong>Real Alcázar, Seville</strong>
@@ -963,39 +999,47 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
       </div>
     </div>
 
-    <div class="check-item">
+    <div class="check-item" data-id="seville-cathedral" data-default="pending">
       <div class="check-mark">✓</div>
       <div class="check-text">
         <strong>Seville Cathedral &amp; Giralda</strong>
-        <a href="https://www.catedraldesevilla.es" target="_blank">catedraldesevilla.es</a> · book 1 week ahead · 2 Jun
+        <a href="https://www.catedraldesevilla.es" target="_blank">catedraldesevilla.es</a> · book 1 week ahead · 1 Jun (back-to-back with Alcázar)
       </div>
     </div>
 
-    <div class="check-item">
+    <div class="check-item" data-id="flamenco" data-default="pending">
       <div class="check-mark">✓</div>
       <div class="check-text">
         <strong>Flamenco show, Seville</strong>
-        Casa de la Memoria or Tablao El Arenal · book 1 week ahead · evening of 2 Jun
+        Casa de la Memoria or Tablao El Arenal · book 1 week ahead · evening of 1 Jun (7pm or 9pm slot)
       </div>
     </div>
 
-    <div class="check-item">
+    <div class="check-item" data-id="manilva" data-default="done">
       <div class="check-mark">✓</div>
       <div class="check-text">
         <strong>Manilva day trip</strong>
-        No booking needed · drive coastal A-7 · Baños de la Hedionda · La Duquesa marina lunch · 4 Jun
+        No booking needed · ~15 min drive west from Estepona (Playa Andaluza) · Baños de la Hedionda · La Duquesa marina lunch · 3 Jun
       </div>
     </div>
 
-    <div class="check-item">
+    <div class="check-item" data-id="botin" data-default="pending">
       <div class="check-mark">✓</div>
       <div class="check-text">
         <strong>Sobrino de Botín, Madrid</strong>
-        <a href="https://www.botin.es" target="_blank">botin.es</a> · book 2–3 weeks ahead · dinner 8 Jun
+        <a href="https://www.botin.es" target="_blank">botin.es</a> · book 2–3 weeks ahead · dinner 7 Jun
       </div>
     </div>
 
-    <div class="check-item">
+    <div class="check-item" data-id="reina-sofia" data-default="pending">
+      <div class="check-mark">+</div>
+      <div class="check-text">
+        <strong>Museo Reina Sofía, Madrid</strong>
+        <a href="https://www.museoreinasofia.es" target="_blank">museoreinasofia.es</a> · Picasso's Guernica · book online to skip queue · 9 Jun morning
+      </div>
+    </div>
+
+    <div class="check-item" data-id="merida-ticket" data-default="pending">
       <div class="check-mark">+</div>
       <div class="check-text">
         <strong>Mérida combined ticket</strong>
@@ -1003,7 +1047,7 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
       </div>
     </div>
 
-    <div class="check-item">
+    <div class="check-item" data-id="cervejaria-ramiro" data-default="pending">
       <div class="check-mark">+</div>
       <div class="check-text">
         <strong>Lisbon dinner — Cervejaria Ramiro</strong>
@@ -1011,7 +1055,7 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
       </div>
     </div>
 
-    <div class="check-item">
+    <div class="check-item" data-id="airport-transfer" data-default="pending">
       <div class="check-mark">✓</div>
       <div class="check-text">
         <strong>Airport transfer Dubai → Lisbon arrival</strong>
@@ -1023,8 +1067,81 @@ footer .meta { font-size: 12px; letter-spacing: 0.25em; text-transform: uppercas
 
 <footer>
   <div class="who serif">Raman · Sulochana · Zain</div>
-  <div class="meta">Portugal &amp; Spain · 27 May – 12 June 2026 · v4 · Private</div>
+  <div class="meta">Portugal &amp; Spain · 27 May – 12 June 2026 · v11 · Private</div>
 </footer>
+
+
+<script>
+(function() {
+  var STORAGE_KEY = 'portugal-spain-trip-checklist-v1';
+  
+  function getState() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+    catch (e) { return {}; }
+  }
+  function saveState(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
+  }
+  function apply(item, done) {
+    if (done) item.classList.add('is-done');
+    else item.classList.remove('is-done');
+    var mark = item.querySelector('.check-mark');
+    if (mark) {
+      mark.textContent = done ? '✓' : (item.dataset.default === 'pending' ? '!' : '+');
+      mark.setAttribute('aria-checked', done ? 'true' : 'false');
+    }
+  }
+  function updateProgress() {
+    var all = document.querySelectorAll('.check-item[data-id]');
+    var done = document.querySelectorAll('.check-item[data-id].is-done');
+    var el = document.getElementById('checklist-progress');
+    if (el) el.textContent = done.length + ' of ' + all.length + ' done';
+  }
+  function init() {
+    var items = document.querySelectorAll('.check-item[data-id]');
+    var state = getState();
+    items.forEach(function(item) {
+      var id = item.dataset.id;
+      var def = item.dataset.default === 'done';
+      var stored = state[id];
+      var done = stored !== undefined ? stored : def;
+      apply(item, done);
+      var mark = item.querySelector('.check-mark');
+      if (!mark) return;
+      mark.setAttribute('role', 'checkbox');
+      mark.setAttribute('tabindex', '0');
+      function toggle() {
+        var s = getState();
+        var newDone = !item.classList.contains('is-done');
+        s[id] = newDone;
+        saveState(s);
+        apply(item, newDone);
+        updateProgress();
+      }
+      mark.addEventListener('click', toggle);
+      mark.addEventListener('keydown', function(e) {
+        if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggle(); }
+      });
+    });
+    updateProgress();
+    
+    var resetBtn = document.getElementById('checklist-reset');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', function() {
+        if (!confirm('Reset all items to their default state? Your progress will be cleared.')) return;
+        localStorage.removeItem(STORAGE_KEY);
+        items.forEach(function(item) {
+          var def = item.dataset.default === 'done';
+          apply(item, def);
+        });
+        updateProgress();
+      });
+    }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+</script>
 
 </body>
 </html>
